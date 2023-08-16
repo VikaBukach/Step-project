@@ -11,13 +11,14 @@ a {
 .body {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
+
 }
 
 .wrapper{
-    min-widthwidth: 1200px;
+    min-width: 1200px;
     margin: 0 auto;
 }
-
+/*-------------------------------------> Header <-----*/
 .first__section-main {
     padding: 0;
     height: 100vh;
@@ -100,4 +101,114 @@ a {
 .menu-link:hover {
     cursor: pointer;
     color: #18CFAB;
+}
+
+/*---------------------------> banner*/
+.banner__content-container {
+    width: 1160px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner {
+    width: 100%;
+}
+
+
+.banner__slogan-wrapper {
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1px;
+    text-transform: uppercase;
+    margin: 32px 0px;
+}
+
+.banner__slogan-green {
+
+    padding-left: 8px;
+    color: #18CFAB;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1px;
+    text-transform: uppercase;
+}
+
+.banner__title {
+    color: #FFF;
+    text-align: center;
+    justify-content: center;
+    font-size: 78px;
+    font-weight: 700;
+    line-height: 1px;
+    text-transform: uppercase;
+    margin: 32px 0px;
+    display: inline-flex;
+}
+
+.banner__slogan-text {
+    color: #D4D4D4;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1px;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    margin: 32px 0px;
+}
+
+.buttons_container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /*margin-top: 129px;*/
+    /*margin-bottom: 243px;*/
+}
+
+.btn{
+    text-decoration: none;
+    width: 169px;
+    height: 63px;
+    border-radius: 4px;
+    color: #FFF;
+}
+
+.btn__explore {
+    background-color: #18CFAB;
+    border-top: #FFFFFF solid 5px;
+    margin-right: 13px;
+}
+
+.btn__purchase {
+    background-color: #00CBF6;
+    border-top: #FFFFFF solid 5px;
+    margin-left: 13px;
+}
+
+.btn__name1{
+    display:block;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    font-family: Montserrat;
+    font-size: 15px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.btn__name2{
+    display:block;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    font-family: Montserrat;
+    font-size: 15px;
+    line-height: 30px;
+    text-transform: uppercase;
 }
