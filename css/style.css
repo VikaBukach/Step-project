@@ -443,7 +443,7 @@ body {
     margin-top: 71px;
 }
 
-.work__card-item {
+.flipping__card {
     position: relative;
     width: 288px;
     height: 211px;
@@ -451,19 +451,19 @@ body {
     float: left;
 }
 
-.work__card-item:hover .card__img-front {
+.flipping__card:hover .flipping__card-front {
     transform: rotateY(180deg);
 }
 
-.work__card-item:hover .card__desc-back {
+.flipping__card:hover .flipping__card-back {
     transform: rotateY(0deg);
 }
 
-.work__card-item .card__desc-back {
+.flipping__card .flipping__card-back {
     transform: rotateY(-180deg);
 }
 
-.work__card-item .card__img-front, .work__card-item .card__desc-back {
+.flipping__card .flipping__card-front, .flipping__card .flipping__card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -473,12 +473,12 @@ body {
     backface-visibility: hidden;
 }
 
-.work__card-item img {
+.flipping__card img {
     width: 100%;
     height: 100%;
 }
 
-.card__desc-subtitle {
+.flipping__card-back-subtitle {
     color: #18CFAB;
     font-size: 14px;
     font-weight: 700;
@@ -486,7 +486,7 @@ body {
     text-transform: uppercase;
 }
 
-.card__desc-text {
+.flipping__card-back-text {
     color: #8A8A8A;
     font-size: 12px;
     font-weight: 300;
@@ -494,13 +494,17 @@ body {
 }
 
 
+.flipping__card-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
+}
 
-
-
-
-
-
+.icon__desc {
+    padding-bottom: 24px;
+}
 
 
 
