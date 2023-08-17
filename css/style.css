@@ -379,7 +379,8 @@ body {
     margin-right: 13px;
     margin-top: 62px;
 }
-  /*--------------п'ята секція------------------*/
+
+/*--------------п'ята секція------------------*/
 .amazing__work-wrapper {
     padding: 0;
     height: 100vh;
@@ -444,38 +445,47 @@ body {
 
 .work__card-item {
     position: relative;
+    width: 288px;
+    height: 211px;
+    perspective: 500px;
+    float: left;
 }
 
-.card__img {
-    display: block;
+.work__card-item:hover .card__img-front {
+    transform: rotateY(180deg);
 }
 
-img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
-
+.work__card-item:hover .card__desc-back {
+    transform: rotateY(0deg);
 }
 
-.card__desc {
+.work__card-item .card__desc-back {
+    transform: rotateY(-180deg);
+}
+
+.work__card-item .card__img-front, .work__card-item .card__desc-back {
     position: absolute;
-    left: 13px;
-    right: 13px;
-    top: 13px;
-    bottom: 13px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in;
     background-color: #E9EDEF;
-    border: 1px solid #18CFAB;
-    text-align: center;
-    height: 285px;
-    display: none;
+    backface-visibility: hidden;
+}
+
+.work__card-item img {
+    width: 100%;
+    height: 100%;
 }
 
 .card__desc-subtitle {
     color: #18CFAB;
     font-size: 14px;
     font-weight: 700;
-    line-height: 25.185px;
+    line-height: 25px;
     text-transform: uppercase;
 }
+
 .card__desc-text {
     color: #8A8A8A;
     font-size: 12px;
