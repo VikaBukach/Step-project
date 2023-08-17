@@ -17,22 +17,18 @@ body {
 .wrapper {
     min-width: 1200px;
     margin: 0 auto;
-
 }
 
-/*-------------------------------------> Header <-----*/
-.first__section-main {
+/* -----------перша секція------------*/
+.section-main {
     padding: 0;
     height: 100vh;
     background-image: url("../images/section-1(header).jpg");
     background-size: cover;
     background-repeat: no-repeat;
-
-    /*---------> робила еф пералаксу. перепровірити ще <-----*/
     background-attachment: fixed;
     background-position: center;
     -webkit-transition: all 0.2s ease-in-out;
-
 }
 
 .header {
@@ -72,7 +68,6 @@ body {
     line-height: 48px;
     padding-top: 37px;
     padding-bottom: 37px;
-
 }
 
 .logo__text-green {
@@ -108,7 +103,7 @@ body {
     color: #18CFAB;
 }
 
-/*---------------------------> banner*/
+/*-------------banner--*/
 .banner__content-container {
     width: 1160px;
     height: 100vh;
@@ -123,7 +118,6 @@ body {
     width: 100%;
 }
 
-
 .banner__slogan-wrapper {
     display: inline-flex;
     text-align: center;
@@ -137,7 +131,6 @@ body {
 }
 
 .banner__slogan-green {
-
     padding-left: 8px;
     color: #18CFAB;
     font-size: 35px;
@@ -214,7 +207,7 @@ body {
     text-transform: uppercase;
 }
 
-/*-------------------------------------> main: four__option_wrapper <-----*/
+/* -----------друга секція------------*/
 
 .four__options_wrapper {
     min-width: 1200px;
@@ -271,18 +264,23 @@ body {
     margin-top: 48px;
 }
 
-.content__box_third-section {
+/* -----------третя секція------------*/
+.ourServices__content-box {
     width: 1160px;
     margin: 0 auto;
     margin-bottom: 91px;
 }
-.ourServices__subtitle {
+
+.subtitle {
     display: flex;
     justify-content: center;
     color: #4E4E4E;
     font-size: 36px;
     font-weight: 400;
     line-height: 40px;
+}
+
+.ourServices__subtitle {
     margin-bottom: 24px;
 }
 
@@ -328,10 +326,187 @@ body {
     display: flex;
 }
 
-    .txt__tabs-content{
-        color: #777;
-        font-size: 13px;
-        font-weight: 300;
-        line-height: 24px;
-        padding-left: 15px;
-    }
+.txt__tabs-content {
+    color: #777;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 24px;
+    padding-left: 15px;
+}
+
+/*---------четверта секція-----------*/
+
+.board__offer-content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../images/bacgr2.jpg");
+    height: 476px;
+}
+
+.board__offer-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-shrink: 0;
+    color: #18CFAB;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.board__offer-subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-shrink: 0;
+    color: #D8D8D8;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-top: 12px;
+    margin-bottom: 67px;
+}
+
+.btn__board {
+    background-color: #18CFAB;
+    border-top: #FFFFFF solid 5px;
+    margin-right: 13px;
+    margin-top: 62px;
+}
+  /*--------------п'ята секція------------------*/
+.amazing__work-wrapper {
+    padding: 0;
+    height: 100vh;
+    background-color: #E9EDEF;
+}
+
+.amazing__work-content-box {
+    width: 1160px;
+    margin: 0 auto;
+    margin-top: 96px;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    color: #4E4E4E;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 24px;
+}
+
+.amazing__work-subtitle {
+    margin-bottom: 20px;
+}
+
+.amazingWork__tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.amazingWork__title {
+    display: flex;
+    justify-content: center;
+    padding: 14px 29px 14px 29px;
+    border: 1px solid #DADADA;
+    background: rgba(0, 0, 0, 0.00);
+    color: #717171;
+    font-weight: 400;
+    line-height: 31px;
+}
+
+.amazingWork__title:hover {
+    color: #18CFAB;
+}
+
+.amazingWork__title:hover {
+    border: 1.5px solid #18CFAB;
+}
+
+/*------------------------карточки----------------------*/
+
+.work__card-wrapper {
+    display: grid;
+    grid-template-columns: 285px repeat(3, 1fr);
+    grid-template-rows: 211px repeat(2, 1fr);
+    gap: 5px;
+    margin-top: 71px;
+}
+
+.work__card-item {
+    position: relative;
+}
+
+.card__img {
+    display: block;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+
+}
+
+.card__desc {
+    position: absolute;
+    left: 13px;
+    right: 13px;
+    top: 13px;
+    bottom: 13px;
+    background-color: #E9EDEF;
+    border: 1px solid #18CFAB;
+    text-align: center;
+    height: 285px;
+    display: none;
+}
+
+.card__desc-subtitle {
+    color: #18CFAB;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25.185px;
+    text-transform: uppercase;
+}
+.card__desc-text {
+    color: #8A8A8A;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
