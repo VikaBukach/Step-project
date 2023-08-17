@@ -1,6 +1,6 @@
 *,
 *::after,
-*::before{
+*::before {
     box-sizing: border-box;
 }
 
@@ -8,17 +8,18 @@ a {
     text-decoration: none;
 }
 
-.body {
+body {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
 
 }
 
-.wrapper{
+.wrapper {
     min-width: 1200px;
     margin: 0 auto;
 
 }
+
 /*-------------------------------------> Header <-----*/
 .first__section-main {
     padding: 0;
@@ -58,7 +59,8 @@ a {
     margin-top: 26px;
     margin-bottom: 27px;
 }
-.logo__text{
+
+.logo__text {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -89,7 +91,7 @@ a {
 .menu__list {
     display: flex;
     flex-direction: row;
-   justify-content: space-between;
+    justify-content: space-between;
 }
 
 .menu-link {
@@ -172,11 +174,9 @@ a {
     text-align: center;
     justify-content: center;
     align-items: center;
-    /*margin-top: 129px;*/
-    /*margin-bottom: 243px;*/
 }
 
-.btn{
+.btn {
     text-decoration: none;
     width: 169px;
     height: 63px;
@@ -196,33 +196,33 @@ a {
     margin-left: 13px;
 }
 
-.btn__name1{
-    display:block;
+.btn__name1 {
+    display: block;
     padding-top: 15px;
     padding-bottom: 16px;
-    font-family: Montserrat;
     font-size: 15px;
     line-height: 30px;
     text-transform: uppercase;
 }
 
-.btn__name2{
-    display:block;
+.btn__name2 {
+    display: block;
     padding-top: 15px;
     padding-bottom: 16px;
-    font-family: Montserrat;
     font-size: 15px;
     line-height: 30px;
     text-transform: uppercase;
 }
+
 /*-------------------------------------> main: four__option_wrapper <-----*/
 
-.four__option_wrapper {
+.four__options_wrapper {
     min-width: 1200px;
     margin-top: 10px;
     display: grid;
     grid-template-columns: 482px repeat(3, 1fr);
     grid-auto-rows: 377px;
+    margin-bottom: 83px;
 }
 
 .option__theme,
@@ -234,7 +234,6 @@ a {
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
-
 }
 
 .option__theme-link,
@@ -247,6 +246,7 @@ a {
     flex-direction: column;
     color: #18CFAB;
 }
+
 .option__customizable-link,
 .option__device-link {
     color: #FFF;
@@ -270,3 +270,69 @@ a {
 .option__device-text {
     margin-top: 48px;
 }
+
+.content__box_third-section {
+    width: 1160px;
+    margin: 0 auto;
+    margin-bottom: 91px;
+}
+
+
+.ourServices__subtitle {
+    display: flex;
+    justify-content: center;
+    color: #4E4E4E;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 24px;
+}
+.dashes {
+    display: block;
+    justify-content: center;
+    margin-bottom: 67px;
+}
+
+.ourServices__tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ourServices__title {
+    display: flex;
+    justify-content: center;
+    padding: 18px 40px 18px 40px;
+    background-color: #d5f2ed;
+    color: #777;;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.ourServices__title.active {
+    background-color: #18CFAB;
+    color: #FFFFFF;
+}
+
+.ourServices__title:hover {
+    border: 1.5px solid #18CFAB;
+}
+
+.ourServices__tabs-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 23px;
+}
+
+.tabs__content-item {
+    display: flex;
+}
+
+    .txt__tabs-content{
+        color: #777;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 24px;
+        padding-left: 15px;
+    }
