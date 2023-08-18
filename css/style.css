@@ -383,14 +383,14 @@ body {
 /*--------------п'ята секція------------------*/
 .amazing__work-wrapper {
     padding: 0;
-    height: 100vh;
+    height: 100%;
     background-color: #E9EDEF;
 }
 
 .amazing__work-content-box {
     width: 1160px;
     margin: 0 auto;
-    margin-top: 96px;
+    margin-top: 0px;
 }
 
 .subtitle {
@@ -404,6 +404,7 @@ body {
 }
 
 .amazing__work-subtitle {
+    padding-top: 95px;
     margin-bottom: 20px;
 }
 
@@ -441,6 +442,7 @@ body {
     grid-template-rows: 211px repeat(2, 1fr);
     gap: 5px;
     margin-top: 71px;
+    margin-bottom: 70px;
 }
 
 .flipping__card {
@@ -506,21 +508,63 @@ body {
     padding-bottom: 24px;
 }
 
+.btn__more {
+    background-color: #18CFAB;
+    border-radius: 5px;
+    margin-right: 13px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
 
+.btn__img {
+    display: flex;
+}
 
+.btn__name3 {
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 
+.btn3 {
+    padding-bottom: 99px;
+}
 
+/*--------------5 секція------------------*/
+.breaking__news-content-box {
+    width: 1160px;
+    margin: 0 auto;
+}
 
+.breaking__news-subtitle {
+    margin-top: 82px;
+}
 
+.card__news-wrapper {
+    list-style: none;
+    display: block;
 
+}
 
+.card__news-img {
+    display: block;
+    position: relative;
+    border-style: none;
+    max-width: 100%;
+}
 
-
-
-
-
-
-
-
-
+/*.team-member-name {*/
+/*    position: absolute;*/
+/*    bottom: 14px;*/
+/*    left: 12px;*/
+/*    padding: 15px 50px 15px 17px;*/
+/*    margin: 0;*/
+/*    background: linear-gradient(0deg, #333333, #333333), #111111;*/
+/*    color: #ffffff;*/
+/*    font-size: 14px;*/
+/*    line-height: 14px;*/
+/*    width: max-content;*/
 
