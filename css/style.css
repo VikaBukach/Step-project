@@ -20,7 +20,7 @@ body {
     margin: 0 auto;
 }
 
-/* -----------перша секція------------*/
+/* -----------1------------*/
 .section-main {
     padding: 0;
     height: 100vh;
@@ -208,7 +208,7 @@ body {
     text-transform: uppercase;
 }
 
-/* -----------друга секція------------*/
+/* -----------2 секція------------*/
 
 .four__options_wrapper {
     min-width: 1200px;
@@ -265,7 +265,7 @@ body {
     margin-top: 48px;
 }
 
-/* -----------третя секція------------*/
+/* -----------3 секція------------*/
 .ourServices__content-box {
     width: 1160px;
     margin: 0 auto;
@@ -336,7 +336,7 @@ body {
     padding-left: 15px;
 }
 
-/*---------четверта секція-----------*/
+/*---------4 секція-----------*/
 
 .board__offer-content-box {
     display: flex;
@@ -382,7 +382,7 @@ body {
     margin-top: 62px;
 }
 
-/*--------------п'ята секція------------------*/
+/*--------------5 секція------------------*/
 .amazing__work-wrapper {
     padding: 0;
     height: 100%;
@@ -535,7 +535,7 @@ body {
     padding-bottom: 99px;
 }
 
-/*--------------5 секція------------------*/
+/*--------------6 секція------------------*/
 .breaking__news-content-box {
     width: 1160px;
     margin: 0 auto;
@@ -622,7 +622,7 @@ body {
 
 }
 
-/*------------------------------section 6*/
+/*------------------------------section 7*/
 
 .whatPeopleSay {
     background-image: url("../images/bacground6.jpg");
@@ -725,7 +725,6 @@ body {
     position: absolute;
 }
 
-
 .carousel__team-wrapper svg:first-child {
     bottom: 20px;
     left: 0px;
@@ -754,9 +753,10 @@ body {
 .team__avatar-img {
     border-radius: 50%;
     border: 10px solid rgba(52, 102, 93, 0.2);
-    transition: 0.3s;
-
+    /*transition: 0.3s;*/
 }
+
+/* -----------8------------*/
 
 
 
