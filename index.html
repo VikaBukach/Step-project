@@ -1767,53 +1767,71 @@
                 odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.
             </p>
 
-            <!-----------------------ЛАЙТБОКС----->
-
-            <div class="lightbox" id="lightboxTeam">
-                <ul class="lightbox-content">
-
-                    <li class="slides__team-big-avatar">
-                        <p class="big-avatar-name">Hanry Obama</p>
-                        <p class="big-avatar-description">PHP developer</p>
-                        <img class="team__avatar" src="./images/avatar/av1.jpg" alt="">
+            <!-----------------------карусель----->
+            <div class="carousel__wrapper" id="">
+                <ul class="carousel__big_avatar">
+                    <li class="team__carousel-card-big" style="display: none">
+                        <h3 class="team__avatar-img-name">Mary Horton</h3>
+                        <span class="team__avatar-img-desc">Web developer</span>
+                        <img class="team__avatar-img-big" src="./images/avatar/av2.jpg" alt="">
                     </li>
-                    <li class="slides__team-big-avatar">
-                        <p class="big-avatar-name">Mary Fletcher</p>
-                        <p class="big-avatar-description">Web developer</p>
-                        <img class="team__avatar" src="./images/avatar/av2.jpg" alt="">
+                    <li class="team__carousel-card-big" style="display: none">
+                        <h3 class="team__avatar-img-name">Hanry French</h3>
+                        <span class="team__avatar-img-desc">PHP developer</span>
+                        <img class="team__avatar-img-big" src="./images/avatar/av1.jpg" alt="">
                     </li>
-                    <li class="slides__team-big-avatar">
-                        <p class="big-avatar-name">Hasan Ali</p>
-                        <p class="big-avatar-description">UX Designer</p>
-                        <img class="team__avatar" src="./images/avatar/av3.jpg" alt="">
+                    <li class="team__carousel-card-big">
+                        <h3 class="team__avatar-img-name">Hasan Ali</h3>
+                        <span class="team__avatar-img-desc">UX Designer</span>
+                        <img class="team__avatar-img-big" src="./images/avatar/av3.jpg" alt="">
                     </li>
-                    <li class="slides__team-big-avatar">
-                        <p class="big-avatar-name">Sara Blinken</p>
-                        <p class="big-avatar-description">SEO</p>
-                        <img class="team__avatar" src="./images/avatar/av4.jpg" alt="">
+                    <li class="team__carousel-card-big" style="display: none">
+                        <h3 class="team__avatar-img-name">Sara Zasyadko</h3>
+                        <span class="team__avatar-img-desc">SEO</span>
+                        <img class="team__avatar-img-big" src="./images/avatar/av4.jpg" alt="">
                     </li>
-                    <!-- Next/previous controls -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-
-            <ul class="team__items">
-                <li class="item">
-                    <img class="team__avatar" onclick="openlightbox();currentSlide(1)" src="./images/avatar/av1.jpg"
-                         alt="">
-                </li>
-                <li class="item">
-                    <img class="team__avatar" onclick="openlightbox();currentSlide(2)" src="./images/avatar/av2.jpg" alt="">
-                </li>
-                <li class="item">
-                    <img class="team__avatar" onclick="openlightbox();currentSlide(3)" src="./images/avatar/av3.jpg" alt="">
-                </li>
-                <li class="item">
-                    <img class="team__avatar" onclick="openlightbox();currentSlide(4)" src="./images/avatar/av4.jpg" alt="">
-                </li>
-            </ul>
                 </ul>
+                <div class="carousel__team-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                    <g clip-path="url(#clip0_2143_60)">
+                        <rect width="31" height="31" fill="black" fill-opacity="0.01" stroke="#BBBBBB"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5076 21.5076L18.8126 20.1056L14.5246 15.4963L18.8126 10.8899L17.5076 9.4867L11.9146 15.4963L17.5076 21.5076Z" fill="#BBBBBB"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_2143_60">
+                            <rect width="31" height="31" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                <ul class="carousel__team">
+                    <li class="team__carousel-card">
+                    <img class="team__avatar-img" src="./images/avatar/av2.jpg" alt="">
+                    </li>
+                    <li class="team__carousel-card">
+                        <img class="team__avatar-img" src="./images/avatar/av1.jpg" alt="">
+                    </li>
+                    <li class="team__carousel-card">
+                        <img class="team__avatar-img" src="./images/avatar/av3.jpg" alt="">
+                    </li>
+                    <li class="team__carousel-card">
+                        <img class="team__avatar-img" src="./images/avatar/av4.jpg" alt="">
+                    </li>
+                </ul>
+                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                    <g clip-path="url(#clip0_2143_63)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.27225 1.99665H31.9999V32.9964H1.27225V1.99665Z" fill="#18CFAB"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4921 11.4875L13.187 12.8899L17.475 17.4971L13.187 22.1056L14.4921 23.5084L20.0851 17.4971L14.4921 11.4875Z" fill="white"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_2143_63">
+                            <rect width="31" height="31" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                </div>
             </div>
+
+
 
 
 
