@@ -295,6 +295,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    cursor: pointer;
 }
 
 .ourServices__title {
@@ -326,6 +327,12 @@ body {
 
 .tabs__content-item {
     display: flex;
+    height: 210px;
+}
+
+.img__tabs-content {
+    width: 284px;
+    height: 210px;
 }
 
 .txt__tabs-content {
