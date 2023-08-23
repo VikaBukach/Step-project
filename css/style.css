@@ -758,6 +758,25 @@ body {
 
 /* -----------8------------*/
 
+.gallery__container {
+    max-width: 1160px;
+    margin: 0 auto;
+    height: 921px;
+    columns: 3;
+}
+
+
+.gallery__container .item {
+    margin-bottom: 1px;
+}
+
+.gallery__container .item img {
+    max-width: 100%;
+}
+
+.item {
+    float: left;
+    padding: 3px;
 
 
 
