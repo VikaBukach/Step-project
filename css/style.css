@@ -745,14 +745,26 @@ body {
     width: 100%;
     padding-left: 38px;
     cursor: pointer;
+}
 
+.team__carousel-card:hover img {
+    transform: scale(1.1);
 }
 
 .team__avatar-img {
     border-radius: 50%;
     border: 10px solid rgba(52, 102, 93, 0.2);
-    /*transition: 0.3s;*/
+
+
 }
+
+
+
+.team__avatar-img img {
+    transition: transform 0.25s;
+}
+
+
 
 /* -----------8------------*/
 
