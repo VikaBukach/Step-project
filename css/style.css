@@ -11,15 +11,13 @@ a {
 body {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
-
-
 }
 
 .wrapper {
     min-width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
-
 /* -----------1------------*/
 .section-main {
     padding: 0;
@@ -107,17 +105,17 @@ body {
 /*-------------banner--*/
 .banner__content-container {
     width: 1160px;
-    height: 100vh;
-    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
     display: flex;
     text-align: center;
     justify-content: center;
-    flex-direction: column;
+
 }
 
-.banner {
-    width: 100%;
-}
 
 .banner__slogan-wrapper {
     display: inline-flex;
