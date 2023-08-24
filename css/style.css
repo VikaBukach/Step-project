@@ -11,6 +11,7 @@ a {
 body {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
+    cursor: default;
 }
 
 .wrapper {
@@ -422,6 +423,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+
 }
 
 .amazingWork__title {
@@ -443,6 +445,12 @@ body {
     border: 1px solid #18CFAB;
 }
 
+.amazingWork__title.active {
+    border: 2px solid #18CFAB;
+}
+
+
+
 /*------------------------карточки----------------------*/
 
 .work__card-wrapper {
@@ -460,6 +468,7 @@ body {
     height: 211px;
     perspective: 500px;
     float: left;
+    display: none;
 }
 
 .flipping__card:hover .flipping__card-front {
@@ -510,7 +519,10 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
 
+.flipping__card.active {
+    display: flex;
 }
 
 .icon__desc {
@@ -538,7 +550,7 @@ body {
     text-transform: uppercase;
 }
 
-.btn3 {
+.amazingWork__btn {
     padding-bottom: 99px;
 }
 
