@@ -11,6 +11,7 @@ menuTabs.forEach((element) => {
         e.target.classList.add('active');
 
         const tabsContent = document.querySelectorAll('.ourServices__tabs-content li');
+        console.log(tabsContent)
         tabsContent.forEach((element) => {
             element.classList.remove('active');
         })

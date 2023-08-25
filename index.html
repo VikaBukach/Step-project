@@ -150,7 +150,7 @@
                 <li class="ourServices__title" data-tab="seoService">Seo Service</li>
             </ul>
             <ul class="ourServices__tabs-content">
-                <li class="tabs__content-item" data-tab="webDesign">
+                <li class="tabs__content-item active" data-tab="webDesign">
                     <img class="img__tabs-content" src="./images/ourService/webdis.jpg" alt="">
                     <p class="txt__tabs-content"> Web design covers a number of directions and
                         disciplines of creating and maintaining sites or web applications, such as graphic web design,
@@ -165,7 +165,7 @@
                         to describe the design and implementation of the client side of a website, including layout.
                     </p>
                 </li>
-                <li class="tabs__content-item" data-tab="graphicDesign" style="display: none">
+                <li class="tabs__content-item" data-tab="graphicDesign">
                     <img class="img__tabs-content" src="./images/ourService/grafDes.jpg" alt="">
                     <p class="txt__tabs-content">
                         Graphic design is the process of creating visual materials for the purpose of conveying certain
@@ -179,7 +179,7 @@
                         aesthetics, but also about effectiveness in conveying information and creating brands.
                     </p>
                 </li>
-                <li class="tabs__content-item" data-tab="onlineSupport" style="display: none">
+                <li class="tabs__content-item" data-tab="onlineSupport">
                     <img class="img__tabs-content" src="./images/ourService/onlSup.jpg" alt="">
                     <p class="txt__tabs-content">
                         The online customer support service is a series of services designed to help customers in the
@@ -187,7 +187,7 @@
                         training, troubleshooting, maintenance, upgrading and disposal of the product.
                     </p>
                 </li>
-                <li class="tabs__content-item" data-tab="appDesign" style="display: none">
+                <li class="tabs__content-item" data-tab="appDesign">
                     <img class="img__tabs-content" src="./images/ourService/appDes.jpg" alt="">
                     <p class="txt__tabs-content">
                         App design is an ongoing process comprising user
@@ -195,7 +195,7 @@
                         app's flow and structure, and make stylistic choices from colors to fonts.
                     </p>
                 </li>
-                <li class="tabs__content-item" data-tab="onlineMarketing" style="display: none">
+                <li class="tabs__content-item" data-tab="onlineMarketing">
                     <img class="img__tabs-content" src="./images/ourService/onlMark.jpg" alt="">
                     <p class="txt__tabs-content">
                         Online marketing is also known as internet marketing, web marketing, or digital marketing. It
@@ -204,7 +204,7 @@
                         pay-per-click advertising (PPC), and search engine marketing (SEM).
                     </p>
                 </li>
-                <li class="tabs__content-item" data-tab="seoService" style="display: none">
+                <li class="tabs__content-item" data-tab="seoService">
                     <img class="img__tabs-content" src="./images/ourService/seoSer.jpg" alt="">
                     <p class="txt__tabs-content">
                         SEO (Search Engine Optimization) services primarily falls into the domain of internet marketing
@@ -1564,19 +1564,17 @@
                         </div>
                     </div>
                 </div>
-                <!---------------------            flipping card по категориям сделані, display: none-->
-                <div class="buttons_container amazingWork__btn">
-                    <a class="btn btn__more">
-                        <svg class="btn__img" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
-                             viewBox="0 0 16 17" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M15.5 6.99735H9.99996V1.49787C9.99996 1.22194 9.77611 0.997242 9.49998 0.997242H6.4999C6.22387 0.997242 5.99991 1.22194 5.99991 1.49787V6.99735H0.499994C0.223838 6.99735 7.98702e-06 7.22206 7.98702e-06 7.4984V10.4976C7.98702e-06 10.7731 0.223838 10.9974 0.499994 10.9974H5.99991V16.4977C5.99991 16.7732 6.22387 16.998 6.4999 16.998H9.49998C9.77611 16.998 9.99996 16.7732 9.99996 16.4977V10.9974H15.5C15.776 10.9974 16 10.7731 16 10.4976V7.4984C16 7.22206 15.776 6.99735 15.5 6.99735Z"
-                                  fill="white"/>
-                        </svg>
-                        <span class="btn__name3">Load More</span>
-                    </a>
-                </div>
+
             </div>
+            <button class="btn__more amazingWork__btn">
+                <svg class="btn__img" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                     viewBox="0 0 16 17" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M15.5 6.99735H9.99996V1.49787C9.99996 1.22194 9.77611 0.997242 9.49998 0.997242H6.4999C6.22387 0.997242 5.99991 1.22194 5.99991 1.49787V6.99735H0.499994C0.223838 6.99735 7.98702e-06 7.22206 7.98702e-06 7.4984V10.4976C7.98702e-06 10.7731 0.223838 10.9974 0.499994 10.9974H5.99991V16.4977C5.99991 16.7732 6.22387 16.998 6.4999 16.998H9.49998C9.77611 16.998 9.99996 16.7732 9.99996 16.4977V10.9974H15.5C15.776 10.9974 16 10.7731 16 10.4976V7.4984C16 7.22206 15.776 6.99735 15.5 6.99735Z"
+                          fill="white"/>
+                </svg>
+                <span class="amazingWork__btn_name">Load More</span>
+            </button>
         </div>
     </section>
     <section class="breaking__news">
@@ -1829,8 +1827,7 @@
         </div>
     </section>
 <!-----8---------------------------->
-    <section class="gallery__images">
-        <div class="gallery__images-wrapper wrapper">
+        <section class="gallery__images-wrapper">
             <div class="gallery__images-content-box">
                 <h3 class="amazing__work-subtitle subtitle">
                     Gallery of best images
@@ -1863,20 +1860,19 @@
                         <div class="item"><img src="./images/gallery_of_best_images/17.png" alt=""></div>
                         <div class="item"><img src="./images/gallery_of_best_images/18.png" alt=""></div>
                     </div>
-                <div class="buttons_container amazingWork__btn">
-                    <a class="btn btn__more" href="#">
-                        <svg class="btn__img" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
-                             viewBox="0 0 16 17" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M15.5 6.99735H9.99996V1.49787C9.99996 1.22194 9.77611 0.997242 9.49998 0.997242H6.4999C6.22387 0.997242 5.99991 1.22194 5.99991 1.49787V6.99735H0.499994C0.223838 6.99735 7.98702e-06 7.22206 7.98702e-06 7.4984V10.4976C7.98702e-06 10.7731 0.223838 10.9974 0.499994 10.9974H5.99991V16.4977C5.99991 16.7732 6.22387 16.998 6.4999 16.998H9.49998C9.77611 16.998 9.99996 16.7732 9.99996 16.4977V10.9974H15.5C15.776 10.9974 16 10.7731 16 10.4976V7.4984C16 7.22206 15.776 6.99735 15.5 6.99735Z"
-                                  fill="white"/>
-                        </svg>
-                        <span class="btn__name3">Load More</span>
-                    </a>
-                </div>
+
             </div>
-        </div>
+            <button class="btn__more gallery__btn">
+                <svg class="btn__img" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                     viewBox="0 0 16 17" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M15.5 6.99735H9.99996V1.49787C9.99996 1.22194 9.77611 0.997242 9.49998 0.997242H6.4999C6.22387 0.997242 5.99991 1.22194 5.99991 1.49787V6.99735H0.499994C0.223838 6.99735 7.98702e-06 7.22206 7.98702e-06 7.4984V10.4976C7.98702e-06 10.7731 0.223838 10.9974 0.499994 10.9974H5.99991V16.4977C5.99991 16.7732 6.22387 16.998 6.4999 16.998H9.49998C9.77611 16.998 9.99996 16.7732 9.99996 16.4977V10.9974H15.5C15.776 10.9974 16 10.7731 16 10.4976V7.4984C16 7.22206 15.776 6.99735 15.5 6.99735Z"
+                          fill="white"/>
+                </svg>
+                <span class="gallery__btn_name">Load More</span>
+            </button>
         </section>
+
 </main>
 <footer class="footer">
     <p class="footer__copyright">© Copyright 2015&nbsp <span class="footer__copyright-txt">theHam</span>&nbsp | All Rights Reserved</p>
