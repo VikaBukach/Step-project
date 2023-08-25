@@ -762,9 +762,14 @@ body {
 }
 
 .carousel__team-wrapper svg {
-
     position: absolute;
 }
+
+.prev:hover,
+.next:hover {
+    background-color: #18CFAB;
+}
+
 
 .prev {
     bottom: 20px;

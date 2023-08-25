@@ -119,12 +119,23 @@ btnPrev.addEventListener("click", (e) => {
         }
         element.classList.remove('active');
     })
+    let dataTab;
     if (indexActiveAvatar === 0) {
         indexActiveAvatar = teamCarousel.length - 1;
-        teamCarousel[indexActiveAvatar].classList.add('active')
+        teamCarousel[indexActiveAvatar].classList.add('active');
+        dataTab = teamCarousel[indexActiveAvatar].getAttribute('data-tab');
     } else {
-        teamCarousel[indexActiveAvatar - 1].classList.add('active')
+        teamCarousel[indexActiveAvatar - 1].classList.add('active');
+        dataTab = teamCarousel[indexActiveAvatar - 1].getAttribute('data-tab');
     }
+    const AllBigAvatars = document.querySelectorAll('.team__carousel-card-big');
+    AllBigAvatars.forEach((avatar) => {
+        if (avatar.getAttribute('data-tab') === dataTab ){
+            avatar.style.display = 'flex'
+        }else {
+            avatar.style.display = 'none'
+        }
+    })
 })
 
 btnNext.addEventListener("click", (e) => {
@@ -135,14 +146,14 @@ btnNext.addEventListener("click", (e) => {
         }
         element.classList.remove('active');
     })
-    let dataTab
+    let dataTab;
     if (indexActiveAvatar === teamCarousel.length-1) {
         indexActiveAvatar = 0;
-        teamCarousel[indexActiveAvatar].classList.add('active')
-        dataTab = teamCarousel[indexActiveAvatar].getAttribute('data-tab')
+        teamCarousel[indexActiveAvatar].classList.add('active');
+        dataTab = teamCarousel[indexActiveAvatar].getAttribute('data-tab');
     } else {
-        teamCarousel[indexActiveAvatar+1].classList.add('active')
-        dataTab = teamCarousel[indexActiveAvatar+1].getAttribute('data-tab')
+        teamCarousel[indexActiveAvatar+1].classList.add('active');
+        dataTab = teamCarousel[indexActiveAvatar+1].getAttribute('data-tab');
     }
     const AllBigAvatars = document.querySelectorAll('.team__carousel-card-big');
     AllBigAvatars.forEach((avatar) => {
