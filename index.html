@@ -1760,24 +1760,24 @@
             </p>
 
             <!-----------------------карусель----->
-            <div class="carousel__wrapper" id="">
+            <div class="carousel__wrapper">
                 <ul class="carousel__big_avatar">
-                    <li class="team__carousel-card-big" style="display: none">
+                    <li class="team__carousel-card-big" data-tab="webDeveloper" style="display: none">
                         <h3 class="team__avatar-img-name">Mary Horton</h3>
                         <span class="team__avatar-img-desc">Web developer</span>
                         <img class="team__avatar-img-big" src="./images/avatar/av2.jpg" alt="">
                     </li>
-                    <li class="team__carousel-card-big" style="display: none">
+                    <li class="team__carousel-card-big" data-tab="phpDeveloper" style="display: none">
                         <h3 class="team__avatar-img-name">Hanry French</h3>
                         <span class="team__avatar-img-desc">PHP developer</span>
                         <img class="team__avatar-img-big" src="./images/avatar/av1.jpg" alt="">
                     </li>
-                    <li class="team__carousel-card-big">
+                    <li class="team__carousel-card-big" data-tab="uxDesigner">
                         <h3 class="team__avatar-img-name">Hasan Ali</h3>
                         <span class="team__avatar-img-desc">UX Designer</span>
                         <img class="team__avatar-img-big" src="./images/avatar/av3.jpg" alt="">
                     </li>
-                    <li class="team__carousel-card-big" style="display: none">
+                    <li class="team__carousel-card-big" data-tab="seo" style="display: none">
                         <h3 class="team__avatar-img-name">Sara Zasyadko</h3>
                         <span class="team__avatar-img-desc">SEO</span>
                         <img class="team__avatar-img-big" src="./images/avatar/av4.jpg" alt="">
@@ -1785,7 +1785,7 @@
                 </ul>
 
                 <div class="carousel__team-wrapper">
-                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                <svg class="prev" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
                     <g clip-path="url(#clip0_2143_60)">
                         <rect width="31" height="31" fill="black" fill-opacity="0.01" stroke="#BBBBBB"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5076 21.5076L18.8126 20.1056L14.5246 15.4963L18.8126 10.8899L17.5076 9.4867L11.9146 15.4963L17.5076 21.5076Z" fill="#BBBBBB"/>
@@ -1797,21 +1797,22 @@
                     </defs>
                 </svg>
                 <ul class="carousel__team">
-                    <li class="team__carousel-card">
+                    <li class="team__carousel-card" data-tab="webDeveloper">
                     <img class="team__avatar-img" src="./images/avatar/av2.jpg" alt="img">
                     </li>
-                    <li class="team__carousel-card">
+                    <li class="team__carousel-card" data-tab="phpDeveloper">
                         <img class="team__avatar-img" src="./images/avatar/av1.jpg" alt="img">
                     </li>
-                    <li class="team__carousel-card">
+                    <li class="team__carousel-card active" data-tab="uxDesigner">
                         <img class="team__avatar-img" src="./images/avatar/av3.jpg" alt="img">
                     </li>
-                    <li class="team__carousel-card">
-                        <img class="team__avatar-img" src="./images/avatar/av4.jpg" alt="img">
+                    <li class="team__carousel-card" data-tab="seo">
+                        <img class="team__avatar-img" data-tab="seo" src="./images/avatar/av4.jpg" alt="img">
                     </li>
                 </ul>
 
-                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+
+                <svg class="next" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
                     <g clip-path="url(#clip0_2143_63)">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M1.27225 1.99665H31.9999V32.9964H1.27225V1.99665Z" fill="#18CFAB"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4921 11.4875L13.187 12.8899L17.475 17.4971L13.187 22.1056L14.4921 23.5084L20.0851 17.4971L14.4921 11.4875Z" fill="white"/>
@@ -1822,6 +1823,7 @@
                         </clipPath>
                     </defs>
                 </svg>
+
                 </div>
             </div>
         </div>

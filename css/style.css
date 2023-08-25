@@ -716,6 +716,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .team__carousel-card-big {
@@ -761,18 +762,20 @@ body {
 }
 
 .carousel__team-wrapper svg {
-    cursor: pointer;
+
     position: absolute;
 }
 
-.carousel__team-wrapper svg:first-child {
+.prev {
     bottom: 20px;
-    left: 0px;
+    left: -30px;
+    user-select: none;
 }
 
-.carousel__team-wrapper svg:last-child {
+.next {
     bottom: 20px;
     right: -30px;
+    user-select: none;
 }
 
 .carousel__team {
@@ -789,20 +792,29 @@ body {
     cursor: pointer;
 }
 
-.team__carousel-card:hover img {
-    transform: scale(1.1);
+.team__carousel-card:nth-child(1) {
+    padding-left: 0px;
 }
 
-.team__avatar-img {
-    border-radius: 50%;
-    border: 10px solid rgba(52, 102, 93, 0.2);
 
+.team__carousel-card.active {
+    transform: translate(0px,-30%);
+}
+
+
+.team__carousel-card:hover img {
+    transform: scale(1.1);
 }
 
 .team__avatar-img img {
     transition: transform 0.25s;
 }
 
+
+.team__avatar-img {
+    border-radius: 50%;
+    border: 10px solid rgba(52, 102, 93, 0.2);
+}
 
 
 /* -----------8------------*/

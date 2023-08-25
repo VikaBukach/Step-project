@@ -59,7 +59,7 @@ function renderAmazingWorkCards(dataTab) {
     foundFlippingCards.forEach((card, index) => {
         if (index < currentCountCategoryItems) {
             card.classList.add('active');
-        }else {
+        } else {
             card.classList.remove('active');
         }
     })
@@ -105,6 +105,61 @@ btnLoadMore.addEventListener('click', (e) => {
     }
     renderAmazingWorkCards(dataTab);
 })
+
+// ----------------------------7 секція-----whatPeopleSay--------
+
+const btnPrev = document.querySelector('.prev');
+const btnNext = document.querySelector('.next');
+let indexActiveAvatar = 0
+btnPrev.addEventListener("click", (e) => {
+    let teamCarousel = document.querySelectorAll('.team__carousel-card');
+    teamCarousel.forEach((element, index) => {
+        if (element.classList.contains('active')) {
+            indexActiveAvatar = index;
+        }
+        element.classList.remove('active');
+    })
+    if (indexActiveAvatar === 0) {
+        indexActiveAvatar = teamCarousel.length - 1;
+        teamCarousel[indexActiveAvatar].classList.add('active')
+    } else {
+        teamCarousel[indexActiveAvatar - 1].classList.add('active')
+    }
+})
+
+btnNext.addEventListener("click", (e) => {
+    let teamCarousel = document.querySelectorAll('.team__carousel-card');
+    teamCarousel.forEach((element, index) => {
+        if (element.classList.contains('active')) {
+            indexActiveAvatar = index;
+        }
+        element.classList.remove('active');
+    })
+    let dataTab
+    if (indexActiveAvatar === teamCarousel.length-1) {
+        indexActiveAvatar = 0;
+        teamCarousel[indexActiveAvatar].classList.add('active')
+        dataTab = teamCarousel[indexActiveAvatar].getAttribute('data-tab')
+    } else {
+        teamCarousel[indexActiveAvatar+1].classList.add('active')
+        dataTab = teamCarousel[indexActiveAvatar+1].getAttribute('data-tab')
+    }
+    const AllBigAvatars = document.querySelectorAll('.team__carousel-card-big');
+    AllBigAvatars.forEach((avatar) => {
+        if (avatar.getAttribute('data-tab') === dataTab ){
+            avatar.style.display = 'flex'
+        }else {
+            avatar.style.display = 'none'
+        }
+    })
+})
+
+
+
+
+
+
+
 
 
 // -----------------------------8 секція----Gallery of best images-----------------------------
