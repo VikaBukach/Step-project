@@ -564,17 +564,6 @@ body {
     align-items: center;
 }
 
-/*.amazingWork__btn {*/
-/*    margin-bottom: 99px;*/
-/*}*/
-
-
-
-
-
-
-
-
 /*--------------6 секція------------------*/
 .breaking__news-content-box {
     width: 1160px;
@@ -595,7 +584,6 @@ body {
     grid-template-columns: repeat(4, 265px);
     grid-template-rows: repeat(2, 294px);
     gap: 13px;
-
 }
 
 .card__news-items-link {
@@ -647,7 +635,6 @@ body {
 .box-content {
     display: flex;
     justify-content: space-around;
-
 }
 
 .card__news-txt,
@@ -657,11 +644,6 @@ body {
     font-size: 14px;
     font-weight: 300;
 }
-
-.card__news-txt {
-
-}
-
 /*------------------------------section 7*/
 
 .whatPeopleSay {
@@ -680,7 +662,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-
 }
 
 .whatPeopleSay__title {
@@ -703,7 +684,6 @@ body {
     margin-top: 37px;
     margin-bottom: 37px;
 }
-
 /*-----------------------------------carousel team------------------------*/
 
 .carousel__wrapper {
@@ -716,7 +696,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .team__carousel-card-big {
@@ -724,7 +703,6 @@ body {
     flex-direction: column;
     list-style: none;
     margin-bottom: 69px;
-
 }
 
 .team__avatar-img-name {
@@ -770,17 +748,18 @@ body {
     background-color: #18CFAB;
 }
 
-
 .prev {
     bottom: 20px;
     left: -30px;
     user-select: none;
+    cursor: pointer;
 }
 
 .next {
     bottom: 20px;
     right: -30px;
     user-select: none;
+    cursor: pointer;
 }
 
 .carousel__team {
@@ -794,18 +773,16 @@ body {
     justify-content: center;
     width: 100%;
     padding-left: 38px;
-    cursor: pointer;
+
 }
 
 .team__carousel-card:nth-child(1) {
     padding-left: 0px;
 }
 
-
 .team__carousel-card.active {
     transform: translate(0px,-30%);
 }
-
 
 .team__carousel-card:hover img {
     transform: scale(1.1);
@@ -815,13 +792,10 @@ body {
     transition: transform 0.25s;
 }
 
-
 .team__avatar-img {
     border-radius: 50%;
     border: 10px solid rgba(52, 102, 93, 0.2);
 }
-
-
 /* -----------8------------*/
 .gallery__images-wrapper {
     display: flex;
