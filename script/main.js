@@ -24,6 +24,7 @@ menuTabs.forEach((element) => {
 // -----------------5 секція------------------
 const amazingWorksTitles = document.querySelectorAll('.amazingWork__title');
 const showCards = 12;
+const maxCards = 36;
 let currentCountCategoryItems = showCards;
 
 amazingWorksTitles.forEach((tab) => {
@@ -87,7 +88,7 @@ function showAmazingWorkButton(dataTab) {
         foundFlippingActiveCards = document.querySelectorAll(`.flipping__card.active[data-tab="${dataTab}"]`)
     }
 
-    if (foundFlippingActiveCards.length < foundFlippingCards.length) {
+    if (foundFlippingActiveCards.length < foundFlippingCards.length && foundFlippingActiveCards.length < maxCards) {
         btnLoadMore.style.display = 'flex';
     } else {
         btnLoadMore.style.display = 'none';
@@ -99,6 +100,9 @@ btnLoadMore.addEventListener('click', (e) => {
     const dataTab = document.querySelector('.amazingWork__title.active').getAttribute('data-tab');
 
     currentCountCategoryItems += showCards;
+    if (currentCountCategoryItems > maxCards) {
+        currentCountCategoryItems = maxCards;
+    }
     renderAmazingWorkCards(dataTab);
 })
 
