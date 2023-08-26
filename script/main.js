@@ -130,9 +130,9 @@ btnPrev.addEventListener("click", (e) => {
     }
     const AllBigAvatars = document.querySelectorAll('.team__carousel-card-big');
     AllBigAvatars.forEach((avatar) => {
-        if (avatar.getAttribute('data-tab') === dataTab ){
+        if (avatar.getAttribute('data-tab') === dataTab) {
             avatar.style.display = 'flex'
-        }else {
+        } else {
             avatar.style.display = 'none'
         }
     })
@@ -147,19 +147,19 @@ btnNext.addEventListener("click", (e) => {
         element.classList.remove('active');
     })
     let dataTab;
-    if (indexActiveAvatar === teamCarousel.length-1) {
+    if (indexActiveAvatar === teamCarousel.length - 1) {
         indexActiveAvatar = 0;
         teamCarousel[indexActiveAvatar].classList.add('active');
         dataTab = teamCarousel[indexActiveAvatar].getAttribute('data-tab');
     } else {
-        teamCarousel[indexActiveAvatar+1].classList.add('active');
-        dataTab = teamCarousel[indexActiveAvatar+1].getAttribute('data-tab');
+        teamCarousel[indexActiveAvatar + 1].classList.add('active');
+        dataTab = teamCarousel[indexActiveAvatar + 1].getAttribute('data-tab');
     }
     const AllBigAvatars = document.querySelectorAll('.team__carousel-card-big');
     AllBigAvatars.forEach((avatar) => {
-        if (avatar.getAttribute('data-tab') === dataTab ){
+        if (avatar.getAttribute('data-tab') === dataTab) {
             avatar.style.display = 'flex'
-        }else {
+        } else {
             avatar.style.display = 'none'
         }
     })
@@ -185,11 +185,32 @@ $(document).ready(function () {
     });
 })
 // --------------------кнопка----------
+const btnGallery = document.querySelector('.gallery__btn');
 
+btnGallery.addEventListener('click', (e) => {
+    generateNewImages();
+})
 
+function getRandomImageSize() {
+    const min = 100;
+    const max = 400;
+    let width = Math.floor(Math.random() * (max - min + 1)) + min;
+    let height = Math.floor(Math.random() * (max - min + 1)) + min;
 
+    return width + 'x' + height;
+}
 
-
+function generateNewImages() {
+    for (let i = 0; i < 12; i++) {
+        const item = document.createElement("div");
+        item.classList.add("item");
+        const img = document.createElement("img");
+        img.setAttribute("src", "https://source.unsplash.com/random/" + getRandomImageSize());
+        item.append(img);
+        const galleryContainer = document.querySelector('.gallery__container');
+        galleryContainer.append(item);
+    }
+}
 
 
 
