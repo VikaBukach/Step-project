@@ -185,9 +185,18 @@ $(document).ready(function () {
     });
 })
 // --------------------кнопка----------
-const btnGallery = document.querySelector('.gallery__btn');
+const btnGallery = document.querySelector('button.gallery__btn');
 
 btnGallery.addEventListener('click', (e) => {
+    btnGallery.style.display = 'none';
+    const preloader = document.querySelector('.gallery__preloader');
+    preloader.style.display = 'block';
+
+    setTimeout(function(){
+        preloader.style.display = 'none';
+        btnGallery.style.display = 'flex';
+    },2000);
+
     generateNewImages();
 })
 
