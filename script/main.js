@@ -210,7 +210,7 @@ function getRandomImageSize() {
 }
 
 function generateNewImages() {
-    for (let i = 0; i < 12; i++) {
+    for (let i = 0; i < 6; i++) {
         const item = document.createElement("div");
         item.classList.add("item");
         const img = document.createElement("img");
