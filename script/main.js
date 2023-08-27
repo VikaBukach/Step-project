@@ -21,7 +21,7 @@ menuTabs.forEach((element) => {
     })
 })
 
-// -----------------5 секція------------------
+// -----------------5 секція---Our Amazing Work---------------
 const amazingWorksTitles = document.querySelectorAll('.amazingWork__title');
 const showCards = 12;
 const maxCards = 36;
@@ -97,6 +97,15 @@ function showAmazingWorkButton(dataTab) {
 
 const btnLoadMore = document.querySelector('.amazingWork__btn');
 btnLoadMore.addEventListener('click', (e) => {
+    btnLoadMore.style.display= 'none';
+    const preloader = document.querySelector('.amazingWork__preloader');
+    preloader.style.display = 'block';
+
+    setTimeout(function() {
+        preloader.style.display = 'none';
+        btnLoadMore.style.display = 'flex';
+    }, 2000);
+
     const dataTab = document.querySelector('.amazingWork__title.active').getAttribute('data-tab');
 
     currentCountCategoryItems += showCards;
