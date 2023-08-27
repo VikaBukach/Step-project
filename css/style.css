@@ -115,9 +115,7 @@ body {
     display: flex;
     text-align: center;
     justify-content: center;
-
 }
-
 
 .banner__slogan-wrapper {
     display: inline-flex;
@@ -318,7 +316,6 @@ body {
 .ourServices__title:hover {
     border: 1px solid #18CFAB;
     padding: 17px 39px;
-
 }
 
 .ourServices__tabs-content {
@@ -433,7 +430,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-
 }
 
 .amazingWork__title {
@@ -458,9 +454,7 @@ body {
 .amazingWork__title.active {
     border: 2px solid #18CFAB;
 }
-
 /*------------------------карточки----------------------*/
-
 .work__card-wrapper {
     display: grid;
     grid-template-columns: 285px repeat(3, 1fr);
@@ -521,7 +515,6 @@ body {
     line-height: 25px;
 }
 
-
 .flipping__card-back {
     display: flex;
     justify-content: center;
@@ -563,7 +556,6 @@ body {
     text-transform: uppercase;
     align-items: center;
 }
-
 /*--------------6 секція------------------*/
 .breaking__news-content-box {
     width: 1160px;
@@ -685,7 +677,6 @@ body {
     margin-bottom: 37px;
 }
 /*-----------------------------------carousel team------------------------*/
-
 .carousel__wrapper {
     max-width: 1160px;
     height: 100%;
@@ -812,7 +803,6 @@ body {
     margin-bottom: 52px;
 }
 
-
 .gallery__container .item {
     margin-bottom: 1px;
 }
@@ -833,7 +823,7 @@ body {
     text-transform: uppercase;
 }
 
-/*-----footer-----*/
+/*-----------footer---------*/
 .footer {
     display: flex;
     align-items: center;
@@ -861,6 +851,3 @@ body {
     font-weight: 300;
     line-height: 26px;
 }
-
-
-

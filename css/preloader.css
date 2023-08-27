@@ -1,8 +1,8 @@
 .loading-container {
-    width: 100%;
-    max-width: 520px;
+    width: 200px;
+    height: 100px;
     text-align: center;
-    color: #fff;
+    color: #18CFAB;
     position: relative;
     margin: 0 32px;
 }
@@ -61,8 +61,7 @@
     }
 }
 .loading-text {
-    font-size: 5vw;
-    line-height: 64px;
+    line-height: 80px;
     letter-spacing: 10px;
     margin-bottom: 32px;
     display: flex;
@@ -115,7 +114,7 @@
 
 @-webkit-keyframes moveLetters {
     0% {
-        transform: translateX(-15vw);
+        transform: translateX(-1vw);
         opacity: 0;
     }
     33.3%, 66% {
@@ -123,14 +122,14 @@
         opacity: 1;
     }
     100% {
-        transform: translateX(15vw);
+        transform: translateX(1vw);
         opacity: 0;
     }
 }
 
 @keyframes moveLetters {
     0% {
-        transform: translateX(-15vw);
+        transform: translateX(-1vw);
         opacity: 0;
     }
     33.3%, 66% {
@@ -138,7 +137,7 @@
         opacity: 1;
     }
     100% {
-        transform: translateX(15vw);
+        transform: translateX(1vw);
         opacity: 0;
     }
 }

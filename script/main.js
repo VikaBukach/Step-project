@@ -73,6 +73,10 @@ showAmazingWorkButton(activeDataTab);
 
 function showAmazingWorkButton(dataTab) {
     const btnLoadMore = document.querySelector('.amazingWork__btn');
+    btnLoadMore.style.display = 'none';
+    const preloader = document.querySelector('.amazingWork__preloader');
+    preloader.style.display = 'block';
+
     let foundFlippingCards;
     if (dataTab === 'cardAll') {
         foundFlippingCards = document.querySelectorAll('.flipping__card')
@@ -89,22 +93,23 @@ function showAmazingWorkButton(dataTab) {
     }
 
     if (foundFlippingActiveCards.length < foundFlippingCards.length && foundFlippingActiveCards.length < maxCards) {
-        btnLoadMore.style.display = 'flex';
+        setTimeout(function() {
+            preloader.style.display = 'none';
+            btnLoadMore.style.display = 'flex';
+        }, 2000);
     } else {
         btnLoadMore.style.display = 'none';
+        preloader.style.display = 'flex';
+
+        setTimeout(function() {
+            preloader.style.display = 'none';
+        }, 2000);
     }
 }
 
 const btnLoadMore = document.querySelector('.amazingWork__btn');
 btnLoadMore.addEventListener('click', (e) => {
     btnLoadMore.style.display= 'none';
-    const preloader = document.querySelector('.amazingWork__preloader');
-    preloader.style.display = 'block';
-
-    setTimeout(function() {
-        preloader.style.display = 'none';
-        btnLoadMore.style.display = 'flex';
-    }, 2000);
 
     const dataTab = document.querySelector('.amazingWork__title.active').getAttribute('data-tab');
 
@@ -177,20 +182,14 @@ btnNext.addEventListener("click", (e) => {
 // -----------------------------8 секція----Gallery of best images-----------------------------
 $(document).ready(function () {
     $('#gallery__container').masonry({
-// указываем элемент-контейнер в котором расположены блоки для динамической верстки
         itemSelector: '.item',
-// указываем класс элемента являющегося блоком в нашей сетке
         singleMode: false,
-// true - если у вас все блоки одинаковой ширины
         isResizable: true,
-// перестраивает блоки при изменении размеров окна
         isAnimated: true,
-// анимируем перестроение блоков
         animationOptions: {
             queue: false,
             duration: 500
         }
-// опции анимации - очередь и продолжительность анимации
     });
 })
 // --------------------кнопка----------
