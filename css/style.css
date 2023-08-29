@@ -298,7 +298,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    cursor: pointer;
 }
 
 .ourServices__title {
@@ -319,6 +318,7 @@ body {
 .ourServices__title:hover {
     border: 1px solid #18CFAB;
     padding: 17px 39px;
+    cursor: url("../svg/our_service_cursor.svg"),auto;
 }
 
 .ourServices__tabs-content {
