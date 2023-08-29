@@ -96,12 +96,15 @@ body {
     font-weight: 700;
     line-height: 25px;
     text-transform: uppercase;
-    padding-right: 21px;
+    margin-right: 21px;
+    padding-bottom: 48px;
+
 }
 
 .menu-link:hover {
     cursor: pointer;
     color: #18CFAB;
+    border-bottom: 2px solid #18CFAB;
 }
 
 /*-------------banner--*/
