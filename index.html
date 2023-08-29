@@ -65,26 +65,26 @@
                 </nav>
             </div>
         </header>
-            <div class="banner__content-container">
-                <h2 class="banner__slogan-wrapper">
-                    The Ham is <span class="banner__slogan-green">  Wordpress theme</span>
-                </h2>
-                <h1 class="banner__title">
-                    we are creative
-                </h1>
-                <h2 class="banner__slogan-text">
-                    Just Buy And Enjoy These Awesome Features
-                </h2>
+        <div class="banner__content-container">
+            <h2 class="banner__slogan-wrapper">
+                The Ham is <span class="banner__slogan-green">  Wordpress theme</span>
+            </h2>
+            <h1 class="banner__title">
+                we are creative
+            </h1>
+            <h2 class="banner__slogan-text">
+                Just Buy And Enjoy These Awesome Features
+            </h2>
 
-                <div class="buttons_container">
-                    <a class="btn btn__explore" href="">
-                        <span class="btn__name1">EXPLORE NOW</span>
-                    </a>
-                    <a class="btn btn__purchase" href="">
-                        <span class="btn__name2">purchase now</span>
-                    </a>
-                </div>
+            <div class="buttons_container">
+                <a class="btn btn__explore" href="">
+                    <span class="btn__name1">EXPLORE NOW</span>
+                </a>
+                <a class="btn btn__purchase" href="">
+                    <span class="btn__name2">purchase now</span>
+                </a>
             </div>
+        </div>
     </section>
 </div>
 <main class="main">
@@ -255,16 +255,15 @@
                           fill="#18CFAB"/>
                 </svg>
                 <ul class="amazingWork__tabs">
-                    <li class="amazingWork__title active" data-tab="cardAll">All</li>
-                    <li class="amazingWork__title" data-tab="cardGraphic">Graphic Design</li>
-                    <li class="amazingWork__title" data-tab="cardWeb">Web Design</li>
-                    <li class="amazingWork__title" data-tab="cardLanding">Landing Pages</li>
-                    <li class="amazingWork__title" data-tab="cardWordpress">Wordpress</li>
+                    <li class="amazingWork__title active" data-category="cardAll">All</li>
+                    <li class="amazingWork__title" data-category="cardGraphic">Graphic Design</li>
+                    <li class="amazingWork__title" data-category="cardWeb">Web Design</li>
+                    <li class="amazingWork__title" data-category="cardLanding">Landing Pages</li>
+                    <li class="amazingWork__title" data-category="cardWordpress">Wordpress</li>
                 </ul>
 
                 <div class="work__card-wrapper">
-                    <!-------------------------1 Graphic Design----------->
-                    <div class="flipping__card" data-tab="cardGraphic">
+                    <div class="flipping__card active" data-category="cardGraphic">
                         <img class="flipping__card-front" src="./images/amazingWork/webdesign/web-design1.jpg" alt="">
                         <div class="flipping__card-back">
                             <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
@@ -289,7 +288,7 @@
                             <p class="flipping__card-back-text">Graphic Design</p>
                         </div>
                     </div>
-                    <div class="flipping__card" data-tab="cardGraphic">
+                    <div class="flipping__card active" data-category="cardGraphic">
                         <img class="flipping__card-front" src="./images/amazingWork/webdesign/web-design2.jpg" alt="">
                         <div class="flipping__card-back">
                             <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
@@ -314,7 +313,7 @@
                             <p class="flipping__card-back-text">Graphic Design</p>
                         </div>
                     </div>
-                    <div class="flipping__card" data-tab="cardGraphic">
+                    <div class="flipping__card active" data-category="cardGraphic">
                         <img class="flipping__card-front" src="./images/amazingWork/webdesign/web-design3.jpg" alt="">
                         <div class="flipping__card-back">
                             <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
@@ -339,233 +338,7 @@
                             <p class="flipping__card-back-text">Graphic Design</p>
                         </div>
                     </div>
-                    <div class="flipping__card" data-tab="cardGraphic">
-                        <img class="flipping__card-front" src="./images/amazingWork/webdesign/web-design4.jpg" alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Graphic Design</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardGraphic">
-                        <img class="flipping__card-front" src="./images/amazingWork/webdesign/web-design5.jpg" alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Graphic Design</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardGraphic">
-                        <img class="flipping__card-front" src="./images/amazingWork/webdesign/web-design6.jpg" alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Graphic Design</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardGraphic">
-                        <img class="flipping__card-front" src="./images/amazingWork/webdesign/web-design7.jpg" alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Graphic Design</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardGraphic">
-                        <img class="flipping__card-front" src="./images/amazingWork/webdesign/web-design8.jpg" alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Graphic Design</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardGraphic">
-                        <img class="flipping__card-front" src="./images/amazingWork/webdesign/web-design9.jpg" alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Graphic Design</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardGraphic">
-                        <img class="flipping__card-front" src="./images/amazingWork/webdesign/web-design10.jpg" alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Graphic Design</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardGraphic" >
-                        <img class="flipping__card-front" src="./images/amazingWork/webdesign/web-design11.jpg" alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Graphic Design</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardGraphic">
-                        <img class="flipping__card-front" src="./images/amazingWork/webdesign/web-design12.jpg" alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Graphic Design</p>
-                        </div>
-                    </div>
-                    <!------------------------------------ -2 web design------------------------ -->
-                    <div class="flipping__card" data-tab="cardWeb">
+                    <div class="flipping__card active" data-category="cardWeb">
                         <img class="flipping__card-front" src="./images/amazingWork/graphicdesign/graphic-design1.jpg"
                              alt="">
                         <div class="flipping__card-back">
@@ -591,7 +364,7 @@
                             <p class="flipping__card-back-text">Web Design</p>
                         </div>
                     </div>
-                    <div class="flipping__card" data-tab="cardWeb" >
+                    <div class="flipping__card active" data-category="cardWeb">
                         <img class="flipping__card-front" src="./images/amazingWork/graphicdesign/graphic-design2.jpg"
                              alt="">
                         <div class="flipping__card-back">
@@ -617,7 +390,7 @@
                             <p class="flipping__card-back-text">Web Design</p>
                         </div>
                     </div>
-                    <div class="flipping__card" data-tab="cardWeb" >
+                    <div class="flipping__card active" data-category="cardWeb">
                         <img class="flipping__card-front" src="./images/amazingWork/graphicdesign/graphic-design3.jpg"
                              alt="">
                         <div class="flipping__card-back">
@@ -643,242 +416,7 @@
                             <p class="flipping__card-back-text">Web Design</p>
                         </div>
                     </div>
-                    <div class="flipping__card" data-tab="cardWeb" >
-                        <img class="flipping__card-front" src="./images/amazingWork/graphicdesign/graphic-design4.jpg"
-                             alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Web Design</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardWeb" >
-                        <img class="flipping__card-front" src="./images/amazingWork/graphicdesign/graphic-design5.jpg"
-                             alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Web Design</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardWeb" >
-                        <img class="flipping__card-front" src="./images/amazingWork/graphicdesign/graphic-design6.jpg"
-                             alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Web Design</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardWeb" >
-                        <img class="flipping__card-front" src="./images/amazingWork/graphicdesign/graphic-design7.jpg"
-                             alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Web Design</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardWeb" >
-                        <img class="flipping__card-front" src="./images/amazingWork/graphicdesign/graphic-design8.jpg"
-                             alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Web Design</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardWeb" >
-                        <img class="flipping__card-front" src="./images/amazingWork/graphicdesign/graphic-design9.jpg"
-                             alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Web Design</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardWeb" >
-                        <img class="flipping__card-front" src="./images/amazingWork/graphicdesign/graphic-design10.jpg"
-                             alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Web Design</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardWeb" >
-                        <img class="flipping__card-front" src="./images/amazingWork/graphicdesign/graphic-design11.jpg"
-                             alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Web Design</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardWeb" >
-                        <img class="flipping__card-front" src="./images/amazingWork/graphicdesign/graphic-design12.jpg"
-                             alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Web Design</p>
-                        </div>
-                    </div>
-                    <!----------------------------------3 Landing Pages--------------------------->
-                    <div class="flipping__card" data-tab="cardLanding" >
+                    <div class="flipping__card active" data-category="cardLanding">
                         <img class="flipping__card-front" src="./images/amazingWork/landingpage/landing-page1.jpg"
                              alt="">
                         <div class="flipping__card-back">
@@ -904,7 +442,7 @@
                             <p class="flipping__card-back-text">Landing Pages</p>
                         </div>
                     </div>
-                    <div class="flipping__card" data-tab="cardLanding" >
+                    <div class="flipping__card active" data-category="cardLanding">
                         <img class="flipping__card-front" src="./images/amazingWork/landingpage/landing-page2.jpg"
                              alt="">
                         <div class="flipping__card-back">
@@ -930,7 +468,7 @@
                             <p class="flipping__card-back-text">Landing Pages</p>
                         </div>
                     </div>
-                    <div class="flipping__card" data-tab="cardLanding" >
+                    <div class="flipping__card active" data-category="cardLanding">
                         <img class="flipping__card-front" src="./images/amazingWork/landingpage/landing-page3.jpg"
                              alt="">
                         <div class="flipping__card-back">
@@ -956,242 +494,7 @@
                             <p class="flipping__card-back-text">Landing Pages</p>
                         </div>
                     </div>
-                    <div class="flipping__card" data-tab="cardLanding" >
-                        <img class="flipping__card-front" src="./images/amazingWork/landingpage/landing-page4.jpg"
-                             alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Landing Pages</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardLanding" >
-                        <img class="flipping__card-front" src="./images/amazingWork/landingpage/landing-page5.jpg"
-                             alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Landing Pages</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardLanding" >
-                        <img class="flipping__card-front" src="./images/amazingWork/landingpage/landing-page6.jpg"
-                             alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Landing Pages</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardLanding" >
-                        <img class="flipping__card-front" src="./images/amazingWork/landingpage/landing-page7.jpg"
-                             alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Landing Pages</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardLanding" >
-                        <img class="flipping__card-front" src="./images/amazingWork/landingpage/landing-page1.jpg"
-                             alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Landing Pages</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardLanding" >
-                        <img class="flipping__card-front" src="./images/amazingWork/landingpage/landing-page2.jpg"
-                             alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Landing Pages</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardLanding" >
-                        <img class="flipping__card-front" src="./images/amazingWork/landingpage/landing-page1.jpg"
-                             alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Landing Pages</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardLanding" >
-                        <img class="flipping__card-front" src="./images/amazingWork/landingpage/landing-page4.jpg"
-                             alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Landing Pages</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardLanding" >
-                        <img class="flipping__card-front" src="./images/amazingWork/landingpage/landing-page3.jpg"
-                             alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Landing Pages</p>
-                        </div>
-                    </div>
-                    <!--         --------------------------   4 Wordpress---------------------------->
-                    <div class="flipping__card" data-tab="cardWordpress" >
+                    <div class="flipping__card active" data-category="cardWordpress">
                         <img class="flipping__card-front" src="./images/amazingWork/wordpress/wordpress4.jpg" alt="">
                         <div class="flipping__card-back">
                             <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
@@ -1216,7 +519,7 @@
                             <p class="flipping__card-back-text">Wordpress</p>
                         </div>
                     </div>
-                    <div class="flipping__card" data-tab="cardWordpress" >
+                    <div class="flipping__card active" data-category="cardWordpress">
                         <img class="flipping__card-front" src="./images/amazingWork/wordpress/wordpress1.jpg" alt="">
                         <div class="flipping__card-back">
                             <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
@@ -1241,7 +544,7 @@
                             <p class="flipping__card-back-text">Wordpress</p>
                         </div>
                     </div>
-                    <div class="flipping__card" data-tab="cardWordpress" >
+                    <div class="flipping__card active" data-category="cardWordpress">
                         <img class="flipping__card-front" src="./images/amazingWork/wordpress/wordpress3.jpg" alt="">
                         <div class="flipping__card-back">
                             <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
@@ -1266,277 +569,33 @@
                             <p class="flipping__card-back-text">Wordpress</p>
                         </div>
                     </div>
-                    <div class="flipping__card" data-tab="cardWordpress" >
-                        <img class="flipping__card-front" src="./images/amazingWork/wordpress/wordpress4.jpg" alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Wordpress</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardWordpress" >
-                        <img class="flipping__card-front" src="./images/amazingWork/wordpress/wordpress5.jpg" alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Wordpress</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardWordpress" >
-                        <img class="flipping__card-front" src="./images/amazingWork/wordpress/wordpress6.jpg" alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Wordpress</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardWordpress" >
-                        <img class="flipping__card-front" src="./images/amazingWork/wordpress/wordpress7.jpg" alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Wordpress</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardWordpress" >
-                        <img class="flipping__card-front" src="./images/amazingWork/wordpress/wordpress8.jpg" alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Wordpress</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardWordpress" >
-                        <img class="flipping__card-front" src="./images/amazingWork/wordpress/wordpress1.jpg" alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Wordpress</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardWordpress" >
-                        <img class="flipping__card-front" src="./images/amazingWork/wordpress/wordpress9.jpg" alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Wordpress</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardWordpress" >
-                        <img class="flipping__card-front" src="./images/amazingWork/wordpress/wordpress10.jpg" alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Wordpress</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardWordpress" >
-                        <img class="flipping__card-front" src="./images/amazingWork/wordpress/wordpress6.jpg" alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Wordpress</p>
-                        </div>
-                    </div>
-                    <div class="flipping__card" data-tab="cardWordpress" >
-                        <img class="flipping__card-front" src="./images/amazingWork/wordpress/wordpress10.jpg" alt="">
-                        <div class="flipping__card-back">
-                            <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
-                                 viewBox="0 0 88 43" fill="none">
-                                <g clip-path="url(#clip0_2143_233)">
-                                    <rect x="1" y="2" width="41" height="40" rx="20" stroke="#18CFAB"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M26.9131 17.7282L25.0948 15.8913C24.2902 15.0809 22.983 15.0759 22.1768 15.8826L20.1592 17.8926C19.3516 18.6989 19.3482 20.0103 20.1505 20.8207L21.3035 19.689C21.1868 19.3284 21.3304 18.9153 21.6159 18.6295L22.8995 17.3519C23.3061 16.9462 23.9584 16.9491 24.3595 17.3543L25.4513 18.458C25.8528 18.8628 25.8511 19.5171 25.447 19.9232L24.1634 21.2024C23.8918 21.473 23.4461 21.6217 23.1002 21.5263L21.9709 22.6589C22.7745 23.4718 24.0803 23.4747 24.8889 22.6684L26.9039 20.6592C27.7141 19.8525 27.7167 18.5398 26.9131 17.7282ZM19.5261 25.0918C19.6219 25.4441 19.4686 25.8997 19.1909 26.1777L17.9923 27.3752C17.5807 27.7845 16.916 27.7833 16.5067 27.369L15.393 26.2475C14.9847 25.8349 14.9873 25.1633 15.3982 24.7547L16.598 23.5577C16.8903 23.2661 17.3104 23.1202 17.6771 23.2438L18.8335 22.0715C18.0149 21.2462 16.6825 21.2421 15.8606 22.0632L13.9152 24.0042C13.0923 24.8266 13.0884 26.1629 13.9065 26.9886L15.7582 28.8618C16.576 29.6846 17.9072 29.6912 18.7311 28.8701L20.6765 26.9287C21.4985 26.1054 21.5024 24.7717 20.6855 23.9443L19.5261 25.0918ZM19.2579 24.5631C18.9801 24.8419 18.5343 24.8411 18.2618 24.5581C17.9879 24.2743 17.9901 23.8204 18.2661 23.5399L21.5907 20.1611C21.8668 19.8823 22.3117 19.8831 22.5851 20.164C22.8605 20.4457 22.8588 20.9009 22.5817 21.183L19.2579 24.5631Z"
-                                          fill="#1FDAB5"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M66.5973 1.99795C77.8653 1.99795 86.9999 10.9523 86.9999 21.9979C86.9999 33.0432 77.8653 41.9979 66.5973 41.9979C55.3292 41.9979 46.1946 33.0432 46.1946 21.9979C46.1946 10.9523 55.3292 1.99795 66.5973 1.99795Z"
-                                          fill="#18CFAB"/>
-                                    <rect x="60" y="17" width="12" height="11" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2143_233">
-                                        <rect width="88" height="43" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3 class="flipping__card-back-subtitle">creative design</h3>
-                            <p class="flipping__card-back-text">Wordpress</p>
-                        </div>
-                    </div>
+
+
+
+
                 </div>
-            </div>
-            <button class="btn__more amazingWork__btn" type="button">
-                <svg class="btn__img" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
-                     viewBox="0 0 16 17" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M15.5 6.99735H9.99996V1.49787C9.99996 1.22194 9.77611 0.997242 9.49998 0.997242H6.4999C6.22387 0.997242 5.99991 1.22194 5.99991 1.49787V6.99735H0.499994C0.223838 6.99735 7.98702e-06 7.22206 7.98702e-06 7.4984V10.4976C7.98702e-06 10.7731 0.223838 10.9974 0.499994 10.9974H5.99991V16.4977C5.99991 16.7732 6.22387 16.998 6.4999 16.998H9.49998C9.77611 16.998 9.99996 16.7732 9.99996 16.4977V10.9974H15.5C15.776 10.9974 16 10.7731 16 10.4976V7.4984C16 7.22206 15.776 6.99735 15.5 6.99735Z"
-                          fill="white"/>
-                </svg>
-                <span class="amazingWork__btn_name">Load More</span>
-            </button>
-            <div class="loading-container amazingWork__preloader" style="display: none">
-                <div class="loading-text">
-                    <span>L</span>
-                    <span>O</span>
-                    <span>A</span>
-                    <span>D</span>
-                    <span>I</span>
-                    <span>N</span>
-                    <span>G</span>
-                </div>
+
+                    <button class="btn__more amazingWork__btn" type="button">
+                        <svg class="btn__img" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                             viewBox="0 0 16 17" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M15.5 6.99735H9.99996V1.49787C9.99996 1.22194 9.77611 0.997242 9.49998 0.997242H6.4999C6.22387 0.997242 5.99991 1.22194 5.99991 1.49787V6.99735H0.499994C0.223838 6.99735 7.98702e-06 7.22206 7.98702e-06 7.4984V10.4976C7.98702e-06 10.7731 0.223838 10.9974 0.499994 10.9974H5.99991V16.4977C5.99991 16.7732 6.22387 16.998 6.4999 16.998H9.49998C9.77611 16.998 9.99996 16.7732 9.99996 16.4977V10.9974H15.5C15.776 10.9974 16 10.7731 16 10.4976V7.4984C16 7.22206 15.776 6.99735 15.5 6.99735Z"
+                                  fill="white"/>
+                        </svg>
+                        <span class="amazingWork__btn_name">Load More</span>
+                    </button>
+                    <div class="loading-container amazingWork__preloader" style="display: none">
+                        <div class="loading-text">
+                            <span>L</span>
+                            <span>O</span>
+                            <span>A</span>
+                            <span>D</span>
+                            <span>I</span>
+                            <span>N</span>
+                            <span>G</span>
+                        </div>
+                    </div>
+
             </div>
         </div>
     </section>
@@ -1740,121 +799,143 @@
                     </li>
                 </ul>
                 <div class="carousel__team-wrapper">
-                <svg class="prev" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
-                    <g clip-path="url(#clip0_2143_60)">
-                        <rect width="31" height="31" fill="black" fill-opacity="0.01" stroke="#BBBBBB"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5076 21.5076L18.8126 20.1056L14.5246 15.4963L18.8126 10.8899L17.5076 9.4867L11.9146 15.4963L17.5076 21.5076Z" fill="#BBBBBB"/>
-                    </g>
-                    <defs>
-                        <clipPath id="clip0_2143_60">
-                            <rect width="31" height="31" fill="white"/>
-                        </clipPath>
-                    </defs>
-                </svg>
-                <ul class="carousel__team">
-                    <li class="team__carousel-card" data-tab="webDeveloper">
-                    <img class="team__avatar-img" src="./images/avatar/av2.jpg" alt="img">
-                    </li>
-                    <li class="team__carousel-card" data-tab="phpDeveloper">
-                        <img class="team__avatar-img" src="./images/avatar/av1.jpg" alt="img">
-                    </li>
-                    <li class="team__carousel-card active" data-tab="uxDesigner">
-                        <img class="team__avatar-img" src="./images/avatar/av3.jpg" alt="img">
-                    </li>
-                    <li class="team__carousel-card" data-tab="seo">
-                        <img class="team__avatar-img" data-tab="seo" src="./images/avatar/av4.jpg" alt="img">
-                    </li>
-                </ul>
-                <svg class="next" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
-                    <g clip-path="url(#clip0_2143_63)">
-                        <rect width="31" height="31" fill="black" fill-opacity="0.01" stroke="#BBBBBB"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd"  d="M1.27225 1.99665H31.9999V32.9964H1.27225V1.99665Z" fill="none"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4921 11.4875L13.187 12.8899L17.475 17.4971L13.187 22.1056L14.4921 23.5084L20.0851 17.4971L14.4921 11.4875Z" fill="white"/>
-                    </g>
-                    <defs>
-                        <clipPath id="clip0_2143_63">
-                            <rect width="31" height="31" fill="white"/>
-                        </clipPath>
-                    </defs>
-                </svg>
+                    <svg class="prev" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31"
+                         fill="none">
+                        <g clip-path="url(#clip0_2143_60)">
+                            <rect width="31" height="31" fill="black" fill-opacity="0.01" stroke="#BBBBBB"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M17.5076 21.5076L18.8126 20.1056L14.5246 15.4963L18.8126 10.8899L17.5076 9.4867L11.9146 15.4963L17.5076 21.5076Z"
+                                  fill="#BBBBBB"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_2143_60">
+                                <rect width="31" height="31" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <ul class="carousel__team">
+                        <li class="team__carousel-card" data-tab="webDeveloper">
+                            <img class="team__avatar-img" src="./images/avatar/av2.jpg" alt="img">
+                        </li>
+                        <li class="team__carousel-card" data-tab="phpDeveloper">
+                            <img class="team__avatar-img" src="./images/avatar/av1.jpg" alt="img">
+                        </li>
+                        <li class="team__carousel-card active" data-tab="uxDesigner">
+                            <img class="team__avatar-img" src="./images/avatar/av3.jpg" alt="img">
+                        </li>
+                        <li class="team__carousel-card" data-tab="seo">
+                            <img class="team__avatar-img" data-tab="seo" src="./images/avatar/av4.jpg" alt="img">
+                        </li>
+                    </ul>
+                    <svg class="next" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31"
+                         fill="none">
+                        <g clip-path="url(#clip0_2143_63)">
+                            <rect width="31" height="31" fill="black" fill-opacity="0.01" stroke="#BBBBBB"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M1.27225 1.99665H31.9999V32.9964H1.27225V1.99665Z" fill="none"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M14.4921 11.4875L13.187 12.8899L17.475 17.4971L13.187 22.1056L14.4921 23.5084L20.0851 17.4971L14.4921 11.4875Z"
+                                  fill="white"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_2143_63">
+                                <rect width="31" height="31" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
                 </div>
             </div>
         </div>
     </section>
-<!-----8---------------------------->
-        <section class="gallery__images-wrapper">
-            <div class="gallery__images-content-box">
-                <h3 class="amazing__work-subtitle subtitle">
-                    Gallery of best images
-                </h3>
-                <svg class="dashes" xmlns="http://www.w3.org/2000/svg" width="91" height="8" viewBox="0 0 91 8"
-                     fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.99989 2.99566V1.99564H77.5431V2.99566H1.99989Z"
-                          fill="#18CFAB"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4565 6.99448V5.99653H89.9998V6.99448H14.4565Z"
-                          fill="#18CFAB"/>
+    <!-----8---------------------------->
+    <section class="gallery__images-wrapper">
+        <div class="gallery__images-content-box">
+            <h3 class="amazing__work-subtitle subtitle">
+                Gallery of best images
+            </h3>
+            <svg class="dashes" xmlns="http://www.w3.org/2000/svg" width="91" height="8" viewBox="0 0 91 8"
+                 fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.99989 2.99566V1.99564H77.5431V2.99566H1.99989Z"
+                      fill="#18CFAB"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4565 6.99448V5.99653H89.9998V6.99448H14.4565Z"
+                      fill="#18CFAB"/>
+            </svg>
+            <div class="gallery__container">
+                <div class="item"><img src="./images/gallery_of_best_images/1.png" alt=""></div>
+                <div class="item"><img src="./images/gallery_of_best_images/2.png" alt=""></div>
+                <div class="item"><img src="./images/gallery_of_best_images/3.png" alt=""></div>
+                <div class="item"><img src="./images/gallery_of_best_images/4.png" alt=""></div>
+                <div class="item"><img src="./images/gallery_of_best_images/5.png" alt=""></div>
+                <div class="item"><img src="./images/gallery_of_best_images/6.png" alt=""></div>
+                <div class="item"><img src="./images/gallery_of_best_images/7.png" alt=""></div>
+                <div class="item"><img src="./images/gallery_of_best_images/8.png" alt=""></div>
+                <div class="item"><img src="./images/gallery_of_best_images/9.png" alt=""></div>
+                <div class="item"><img src="./images/gallery_of_best_images/10.png" alt=""></div>
+                <div class="item"><img src="./images/gallery_of_best_images/11.png" alt=""></div>
+                <div class="item"><img src="./images/gallery_of_best_images/12.png" alt=""></div>
+                <div class="item"><img src="./images/gallery_of_best_images/13.png" alt=""></div>
+                <div class="item"><img src="./images/gallery_of_best_images/14.png" alt=""></div>
+                <div class="item"><img src="./images/gallery_of_best_images/15.png" alt=""></div>
+                <div class="item"><img src="./images/gallery_of_best_images/16.png" alt=""></div>
+                <div class="item"><img src="./images/gallery_of_best_images/17.png" alt=""></div>
+                <div class="item"><img src="./images/gallery_of_best_images/18.png" alt=""></div>
+            </div>
+        </div>
+        <button class="btn__more gallery__btn" type="button">
+            <svg class="btn__img" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                 viewBox="0 0 16 17" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M15.5 6.99735H9.99996V1.49787C9.99996 1.22194 9.77611 0.997242 9.49998 0.997242H6.4999C6.22387 0.997242 5.99991 1.22194 5.99991 1.49787V6.99735H0.499994C0.223838 6.99735 7.98702e-06 7.22206 7.98702e-06 7.4984V10.4976C7.98702e-06 10.7731 0.223838 10.9974 0.499994 10.9974H5.99991V16.4977C5.99991 16.7732 6.22387 16.998 6.4999 16.998H9.49998C9.77611 16.998 9.99996 16.7732 9.99996 16.4977V10.9974H15.5C15.776 10.9974 16 10.7731 16 10.4976V7.4984C16 7.22206 15.776 6.99735 15.5 6.99735Z"
+                      fill="white"/>
+            </svg>
+            <span class="gallery__btn_name">Load More</span>
+        </button>
+        <div class="loading-container gallery__preloader" style="display: none">
+            <div class="loading-text">
+                <span>L</span>
+                <span>O</span>
+                <span>A</span>
+                <span>D</span>
+                <span>I</span>
+                <span>N</span>
+                <span>G</span>
+            </div>
+        </div>
+        <div class="socials">
+            <a class="social-link" href="https://github.com/VikaBukach" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="45" height="45" viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                       stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                       font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                       style="mix-blend-mode: normal">
+                        <g transform="scale(2.56,2.56)">
+                            <path d="M29,17c-6.617,0 -12,5.383 -12,12v42c0,6.617 5.383,12 12,12h42c6.617,0 12,-5.383 12,-12v-42c0,-6.617 -5.383,-12 -12,-12zM29,19h42c5.514,0 10,4.486 10,10v42c0,5.514 -4.486,10 -10,10h-42c-5.514,0 -10,-4.486 -10,-10v-42c0,-5.514 4.486,-10 10,-10zM34.5,23c-6.341,0 -11.5,5.159 -11.5,11.5v31c0,6.341 5.159,11.5 11.5,11.5h7.47656h17h6.52344c6.341,0 11.5,-5.159 11.5,-11.5v-15c0,-0.276 -0.224,-0.5 -0.5,-0.5c-0.276,0 -0.5,0.224 -0.5,0.5v15c0,5.79 -4.71,10.5 -10.5,10.5h-6.02344v-8.3457c0,-2.213 -1.03714,-4.2863 -2.74414,-5.6543h0.69336c7.173,0 13.00781,-5.81394 13.00781,-12.96094c0,-3.237 -1.19977,-6.32842 -3.38477,-8.73242c0.33,-2.064 0.33539,-5.16284 -0.59961,-7.96484c-0.069,-0.204 -0.25961,-0.3418 -0.47461,-0.3418c-4.051,0 -7.47144,2.689 -8.89844,4h-12.4082c-3.5,-3.304 -6.65541,-4 -8.69141,-4c-0.215,0 -0.40561,0.1378 -0.47461,0.3418c-0.768,2.301 -1.10548,5.05481 -0.89648,7.25781c-2.599,2.454 -4.08398,5.87941 -4.08398,9.44141c0,7.146 5.83386,12.95898 13.00586,12.95898h0.66797c-1.321,1.032 -2.26691,2.45109 -2.62891,3.99609c-1.997,-0.032 -4.28647,-0.32764 -5.35547,-1.93164c-2.425,-3.64 -3.64833,-3.91211 -5.23633,-3.91211c-0.663,0 -1.16209,0.28992 -1.37109,0.79492c-0.294,0.708 0.04897,1.65053 0.91797,2.51953c1.172,1.173 1.17319,1.17159 2.36719,3.55859c0.722,1.444 2.79089,3.83775 8.58789,3.96875v5.00586h-6.97656c-5.79,0 -10.5,-4.71 -10.5,-10.5v-31c0,-5.79 4.71,-10.5 10.5,-10.5h31c0.276,0 0.5,-0.224 0.5,-0.5c0,-0.276 -0.224,-0.5 -0.5,-0.5zM36.33789,33.00781c1.868,0.084 4.61926,0.84253 7.69727,3.76953l0.0918,0.08789c0.093,0.087 0.2148,0.13477 0.3418,0.13477h12.80469c0.127,0 0.26051,-0.05753 0.35352,-0.14453c1.192,-1.123 4.30433,-3.68566 7.98633,-3.84766c0.799,2.645 0.7412,5.51709 0.4082,7.37109c-0.028,0.157 0.01991,0.31664 0.12891,0.43164c2.116,2.242 3.2832,5.16452 3.2832,8.22852c0,6.595 -5.38681,11.96094 -12.00781,11.96094h-2.44922c-0.235,0 -0.43828,0.16358 -0.48828,0.39258c-0.051,0.229 0.0653,0.46255 0.2793,0.56055c2.252,1.033 3.70898,3.27017 3.70898,5.70117v8.3457h-16v-5.5c0,-0.276 -0.224,-0.5 -0.5,-0.5c-4.181,0 -7.09136,-1.21587 -8.19336,-3.42187c-1.243,-2.485 -1.26769,-2.53136 -2.55469,-3.81836c-0.671,-0.672 -0.78717,-1.22369 -0.70117,-1.42969c0.063,-0.155 0.30727,-0.17773 0.44727,-0.17773c1.123,0 2.0933,-0.0002 4.4043,3.4668c1.407,2.109 4.26466,2.38086 6.59766,2.38086c0.245,0 0.45319,-0.17792 0.49219,-0.41992c0.318,-1.949 1.74084,-3.721 3.71484,-4.625c0.214,-0.098 0.33225,-0.33155 0.28125,-0.56055c-0.05,-0.23 -0.25328,-0.39453 -0.48828,-0.39453h-2.44727c-6.62,0 -12.00781,-5.36594 -12.00781,-11.96094c0,-3.365 1.43736,-6.6 3.94336,-8.875c0.119,-0.109 0.18111,-0.26773 0.16211,-0.42773c-0.229,-1.967 0.04894,-4.56652 0.71094,-6.72852zM76.5,34c-0.276,0 -0.5,0.224 -0.5,0.5v3.5c0,0.276 0.224,0.5 0.5,0.5c0.276,0 0.5,-0.224 0.5,-0.5v-3.5c0,-0.276 -0.224,-0.5 -0.5,-0.5zM76.5,41c-0.276,0 -0.5,0.224 -0.5,0.5v6.5c0,0.276 0.224,0.5 0.5,0.5c0.276,0 0.5,-0.224 0.5,-0.5v-6.5c0,-0.276 -0.224,-0.5 -0.5,-0.5z"></path>
+                        </g>
+                    </g>
                 </svg>
-                    <div class="gallery__container">
-                        <div class="item"><img src="./images/gallery_of_best_images/1.png" alt=""></div>
-                        <div class="item"><img src="./images/gallery_of_best_images/2.png" alt=""></div>
-                        <div class="item"><img src="./images/gallery_of_best_images/3.png" alt=""></div>
-                        <div class="item"><img src="./images/gallery_of_best_images/4.png" alt=""></div>
-                        <div class="item"><img src="./images/gallery_of_best_images/5.png" alt=""></div>
-                        <div class="item"><img src="./images/gallery_of_best_images/6.png" alt=""></div>
-                        <div class="item"><img src="./images/gallery_of_best_images/7.png" alt=""></div>
-                        <div class="item"><img src="./images/gallery_of_best_images/8.png" alt=""></div>
-                        <div class="item"><img src="./images/gallery_of_best_images/9.png" alt=""></div>
-                        <div class="item"><img src="./images/gallery_of_best_images/10.png" alt=""></div>
-                        <div class="item"><img src="./images/gallery_of_best_images/11.png" alt=""></div>
-                        <div class="item"><img src="./images/gallery_of_best_images/12.png" alt=""></div>
-                        <div class="item"><img src="./images/gallery_of_best_images/13.png" alt=""></div>
-                        <div class="item"><img src="./images/gallery_of_best_images/14.png" alt=""></div>
-                        <div class="item"><img src="./images/gallery_of_best_images/15.png" alt=""></div>
-                        <div class="item"><img src="./images/gallery_of_best_images/16.png" alt=""></div>
-                        <div class="item"><img src="./images/gallery_of_best_images/17.png" alt=""></div>
-                        <div class="item"><img src="./images/gallery_of_best_images/18.png" alt=""></div>
-                    </div>
-            </div>
-            <button class="btn__more gallery__btn" type="button">
-                <svg class="btn__img" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
-                     viewBox="0 0 16 17" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M15.5 6.99735H9.99996V1.49787C9.99996 1.22194 9.77611 0.997242 9.49998 0.997242H6.4999C6.22387 0.997242 5.99991 1.22194 5.99991 1.49787V6.99735H0.499994C0.223838 6.99735 7.98702e-06 7.22206 7.98702e-06 7.4984V10.4976C7.98702e-06 10.7731 0.223838 10.9974 0.499994 10.9974H5.99991V16.4977C5.99991 16.7732 6.22387 16.998 6.4999 16.998H9.49998C9.77611 16.998 9.99996 16.7732 9.99996 16.4977V10.9974H15.5C15.776 10.9974 16 10.7731 16 10.4976V7.4984C16 7.22206 15.776 6.99735 15.5 6.99735Z"
-                          fill="white"/>
+            </a>
+            <a class="social-link" href="https://www.linkedin.com/in/victoria-bukach-291820274/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="feather feather-linkedin">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                    <rect x="2" y="9" width="4" height="12"/>
+                    <circle cx="4" cy="4" r="2"/>
                 </svg>
-                <span class="gallery__btn_name">Load More</span>
-            </button>
-            <div class="loading-container gallery__preloader" style="display: none">
-                <div class="loading-text">
-                    <span>L</span>
-                    <span>O</span>
-                    <span>A</span>
-                    <span>D</span>
-                    <span>I</span>
-                    <span>N</span>
-                    <span>G</span>
-                </div>
-            </div>
-            <div class="socials">
-                <a class="social-link" href="https://github.com/VikaBukach" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="45" height="45" viewBox="0,0,256,256">
-                        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(2.56,2.56)"><path d="M29,17c-6.617,0 -12,5.383 -12,12v42c0,6.617 5.383,12 12,12h42c6.617,0 12,-5.383 12,-12v-42c0,-6.617 -5.383,-12 -12,-12zM29,19h42c5.514,0 10,4.486 10,10v42c0,5.514 -4.486,10 -10,10h-42c-5.514,0 -10,-4.486 -10,-10v-42c0,-5.514 4.486,-10 10,-10zM34.5,23c-6.341,0 -11.5,5.159 -11.5,11.5v31c0,6.341 5.159,11.5 11.5,11.5h7.47656h17h6.52344c6.341,0 11.5,-5.159 11.5,-11.5v-15c0,-0.276 -0.224,-0.5 -0.5,-0.5c-0.276,0 -0.5,0.224 -0.5,0.5v15c0,5.79 -4.71,10.5 -10.5,10.5h-6.02344v-8.3457c0,-2.213 -1.03714,-4.2863 -2.74414,-5.6543h0.69336c7.173,0 13.00781,-5.81394 13.00781,-12.96094c0,-3.237 -1.19977,-6.32842 -3.38477,-8.73242c0.33,-2.064 0.33539,-5.16284 -0.59961,-7.96484c-0.069,-0.204 -0.25961,-0.3418 -0.47461,-0.3418c-4.051,0 -7.47144,2.689 -8.89844,4h-12.4082c-3.5,-3.304 -6.65541,-4 -8.69141,-4c-0.215,0 -0.40561,0.1378 -0.47461,0.3418c-0.768,2.301 -1.10548,5.05481 -0.89648,7.25781c-2.599,2.454 -4.08398,5.87941 -4.08398,9.44141c0,7.146 5.83386,12.95898 13.00586,12.95898h0.66797c-1.321,1.032 -2.26691,2.45109 -2.62891,3.99609c-1.997,-0.032 -4.28647,-0.32764 -5.35547,-1.93164c-2.425,-3.64 -3.64833,-3.91211 -5.23633,-3.91211c-0.663,0 -1.16209,0.28992 -1.37109,0.79492c-0.294,0.708 0.04897,1.65053 0.91797,2.51953c1.172,1.173 1.17319,1.17159 2.36719,3.55859c0.722,1.444 2.79089,3.83775 8.58789,3.96875v5.00586h-6.97656c-5.79,0 -10.5,-4.71 -10.5,-10.5v-31c0,-5.79 4.71,-10.5 10.5,-10.5h31c0.276,0 0.5,-0.224 0.5,-0.5c0,-0.276 -0.224,-0.5 -0.5,-0.5zM36.33789,33.00781c1.868,0.084 4.61926,0.84253 7.69727,3.76953l0.0918,0.08789c0.093,0.087 0.2148,0.13477 0.3418,0.13477h12.80469c0.127,0 0.26051,-0.05753 0.35352,-0.14453c1.192,-1.123 4.30433,-3.68566 7.98633,-3.84766c0.799,2.645 0.7412,5.51709 0.4082,7.37109c-0.028,0.157 0.01991,0.31664 0.12891,0.43164c2.116,2.242 3.2832,5.16452 3.2832,8.22852c0,6.595 -5.38681,11.96094 -12.00781,11.96094h-2.44922c-0.235,0 -0.43828,0.16358 -0.48828,0.39258c-0.051,0.229 0.0653,0.46255 0.2793,0.56055c2.252,1.033 3.70898,3.27017 3.70898,5.70117v8.3457h-16v-5.5c0,-0.276 -0.224,-0.5 -0.5,-0.5c-4.181,0 -7.09136,-1.21587 -8.19336,-3.42187c-1.243,-2.485 -1.26769,-2.53136 -2.55469,-3.81836c-0.671,-0.672 -0.78717,-1.22369 -0.70117,-1.42969c0.063,-0.155 0.30727,-0.17773 0.44727,-0.17773c1.123,0 2.0933,-0.0002 4.4043,3.4668c1.407,2.109 4.26466,2.38086 6.59766,2.38086c0.245,0 0.45319,-0.17792 0.49219,-0.41992c0.318,-1.949 1.74084,-3.721 3.71484,-4.625c0.214,-0.098 0.33225,-0.33155 0.28125,-0.56055c-0.05,-0.23 -0.25328,-0.39453 -0.48828,-0.39453h-2.44727c-6.62,0 -12.00781,-5.36594 -12.00781,-11.96094c0,-3.365 1.43736,-6.6 3.94336,-8.875c0.119,-0.109 0.18111,-0.26773 0.16211,-0.42773c-0.229,-1.967 0.04894,-4.56652 0.71094,-6.72852zM76.5,34c-0.276,0 -0.5,0.224 -0.5,0.5v3.5c0,0.276 0.224,0.5 0.5,0.5c0.276,0 0.5,-0.224 0.5,-0.5v-3.5c0,-0.276 -0.224,-0.5 -0.5,-0.5zM76.5,41c-0.276,0 -0.5,0.224 -0.5,0.5v6.5c0,0.276 0.224,0.5 0.5,0.5c0.276,0 0.5,-0.224 0.5,-0.5v-6.5c0,-0.276 -0.224,-0.5 -0.5,-0.5z"></path></g></g>
-                    </svg>
-                </a>
-                <a class="social-link" href="https://www.linkedin.com/in/victoria-bukach-291820274/" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                </a>
-            </div>
-        </section>
+            </a>
+        </div>
+    </section>
 </main>
 <footer class="footer">
-    <p class="footer__copyright">© Copyright 2015&nbsp <span class="footer__copyright-txt">theHam</span>&nbsp | All Rights Reserved</p>
+    <p class="footer__copyright">© Copyright 2015&nbsp <span class="footer__copyright-txt">theHam</span>&nbsp | All
+        Rights Reserved</p>
 </footer>
 <script
         src="https://code.jquery.com/jquery-3.7.0.slim.js"
         integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c="
         crossorigin="anonymous"></script>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="script/flipping_card_data.js"></script>
 <script src="script/main.js"></script>
 </body>
 </html>
