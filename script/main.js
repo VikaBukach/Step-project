@@ -47,10 +47,38 @@ amazingWorksTitles.forEach((category) => {
     })
 })
 
-function generateOneCard(card) {
-    return `
-     <div class="flipping__card active" data-category="${card.category}">
-            <img class="flipping__card-front" src="${card.url}" alt="">
+const categoryList = [
+    {
+        categoryName: "Graphic Design",
+        category: "cardGraphic",
+    },
+    {
+        categoryName: "Web Design",
+        category: "cardWeb",
+    },
+    {
+        categoryName: "Landing Pages",
+        category: "cardLanding",
+    },
+    {
+        categoryName: "Wordpress",
+        category: "cardWordpress",
+    },
+];
+
+var currentCategoryType = 0;
+function generateOneCard() {
+
+    if (currentCategoryType === categoryList.length) {
+        currentCategoryType = 0;
+    }
+
+    const imgSize = getRandomImageSize(200, 285);
+    let flippingCard = document.createElement('div');
+    flippingCard.classList.add('flipping__card');
+    flippingCard.classList.add('active');
+    flippingCard.setAttribute('data-category', categoryList[currentCategoryType].category);
+    flippingCard.innerHTML = `<img class="flipping__card-front" src="https://source.unsplash.com/random/${imgSize}" alt="">
             <div class="flipping__card-back">
                 <svg class="icon__desc" xmlns="http://www.w3.org/2000/svg" width="88" height="43"
                      viewBox="0 0 88 43" fill="none">
@@ -70,84 +98,69 @@ function generateOneCard(card) {
                         </clipPath>
                     </defs>
                 </svg>
-                <h3 class="flipping__card-back-subtitle">${card.title}</h3>
-                <p class="flipping__card-back-text">${card.categoryName}</p>
-            </div>
-        </div>`;
-}
+                <h3 class="flipping__card-back-subtitle">creative design</h3>
+                <p class="flipping__card-back-text">${categoryList[currentCategoryType].categoryName}</p>
+            </div>`;
 
+    currentCategoryType++;
+
+    return flippingCard;
+}
 
 
 function renderAmazingWorkCards(dataCategory) {
     let foundFlippingCards;
+    console.log(dataCategory)
     if (dataCategory === 'cardAll') {
         foundFlippingCards = document.querySelectorAll('.flipping__card')
     } else {
         foundFlippingCards = document.querySelectorAll(`.flipping__card[data-category="${dataCategory}"]`)
     }
 
-    foundFlippingCards.forEach((card, index) => {
-        if (index < currentCountCategoryItems) {
-            card.classList.add('active');
-        } else {
-            card.classList.remove('active');
-        }
+    document.querySelectorAll('.flipping__card').forEach((card) => {
+        card.classList.remove('active');
     })
 
-    showAmazingWorkButton(dataCategory)
+    foundFlippingCards.forEach((card, index) => {
+            card.classList.add('active');
+    })
+
+
 }
 
-const activeDataTab = document.querySelector('.amazingWork__title.active').getAttribute('data-tab')
+const activeDataTab = document.querySelector('.amazingWork__title.active').getAttribute('data-category')
 renderAmazingWorkCards(activeDataTab);
-showAmazingWorkButton(activeDataTab);
 
-function showAmazingWorkButton(dataCategory) {
-    const btnLoadMore = document.querySelector('.amazingWork__btn');
-    btnLoadMore.style.display = 'none';
-    const preloader = document.querySelector('.amazingWork__preloader');
-    preloader.style.display = 'block';
-
-    let foundFlippingCards;
-    if (dataCategory === 'cardAll') {
-        foundFlippingCards = document.querySelectorAll('.flipping__card')
-    } else {
-        foundFlippingCards = document.querySelectorAll(`.flipping__card[data-category="${dataCategory}"]`)
-    }
-
-
-    let foundFlippingActiveCards;
-    if (dataCategory === 'cardAll') {
-        foundFlippingActiveCards = document.querySelectorAll('.flipping__card.active')
-    } else {
-        foundFlippingActiveCards = document.querySelectorAll(`.flipping__card.active[data-category="${dataCategory}"]`)
-    }
-
-    if (foundFlippingActiveCards.length < foundFlippingCards.length && foundFlippingActiveCards.length < maxCards) {
-        setTimeout(function() {
-            preloader.style.display = 'none';
-            btnLoadMore.style.display = 'flex';
-        }, 2000);
-    } else {
-        btnLoadMore.style.display = 'none';
-        preloader.style.display = 'flex';
-
-        setTimeout(function() {
-            preloader.style.display = 'none';
-        }, 2000);
-    }
-}
 
 const btnLoadMore = document.querySelector('.amazingWork__btn');
 btnLoadMore.addEventListener('click', (e) => {
-    btnLoadMore.style.display= 'none';
+    btnLoadMore.style.display = 'none';
+    const btnPreloader = document.querySelector('.amazingWork__preloader');
+    btnPreloader.style.display = 'block';
 
-    const dataCategory = document.querySelector('.amazingWork__title').getAttribute('data-category');
 
-    currentCountCategoryItems += showCards;
-    if (currentCountCategoryItems > maxCards) {
-        currentCountCategoryItems = maxCards;
-    }
-    renderAmazingWorkCards(dataCategory);
+    setTimeout(function () {
+        const cardWrapper = document.querySelector('.work__card-wrapper');
+        for ( let i = 0; i < showCards; i++) {
+            cardWrapper.append(generateOneCard());
+        }
+
+        currentCountCategoryItems += showCards;
+
+        const allTabs = document.querySelectorAll('.amazingWork__title');
+        allTabs.forEach((tab) => {
+            tab.classList.remove('active');
+        })
+        const activeTab = document.querySelector('.amazingWork__title[data-category="cardAll"]');
+        activeTab.classList.add('active');
+
+        const flippingCards = document.querySelectorAll('.flipping__card');
+        btnPreloader.style.display = 'none';
+
+        if (flippingCards.length < maxCards) {
+            btnLoadMore.style.display = 'flex';
+        }
+    }, 2000)
 })
 
 // ----------------------------7 секція-----whatPeopleSay--------
@@ -230,17 +243,15 @@ btnGallery.addEventListener('click', (e) => {
     const preloader = document.querySelector('.gallery__preloader');
     preloader.style.display = 'block';
 
-    setTimeout(function(){
+    setTimeout(function () {
         preloader.style.display = 'none';
         btnGallery.style.display = 'flex';
-    },2000);
+    }, 2000);
 
     generateNewImages();
 })
 
-function getRandomImageSize() {
-    const min = 100;
-    const max = 400;
+function getRandomImageSize(min, max) {
     let width = Math.floor(Math.random() * (max - min + 1)) + min;
     let height = Math.floor(Math.random() * (max - min + 1)) + min;
 
@@ -252,7 +263,7 @@ function generateNewImages() {
         const item = document.createElement("div");
         item.classList.add("item");
         const img = document.createElement("img");
-        img.setAttribute("src", "https://source.unsplash.com/random/" + getRandomImageSize());
+        img.setAttribute("src", "https://source.unsplash.com/random/" + getRandomImageSize(100, 400));
         item.append(img);
         const galleryContainer = document.querySelector('.gallery__container');
         galleryContainer.append(item);

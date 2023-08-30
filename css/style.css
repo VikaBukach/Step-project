@@ -536,6 +536,13 @@ body {
     padding-bottom: 24px;
 }
 
+.btn__section-amazingWork {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
 .btn__more {
     justify-content: space-around;
     text-align: center;
