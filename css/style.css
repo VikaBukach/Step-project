@@ -314,7 +314,6 @@ body {
 .ourServices__title.active {
     background-color: #18CFAB;
     color: #FFFFFF;
-    cursor: auto;
 }
 
 .ourServices__title:hover {
@@ -402,9 +401,6 @@ body {
     height: 100%;
     background-color: #E9EDEF;
     display: flex;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
 }
 
 .amazing__work-content-box {
@@ -562,7 +558,7 @@ body {
     align-items: center;
 }
 
-.amazingWork__btn_name {
+.amazingWork__btn {
     display: flex;
     font-size: 14px;
     font-weight: 700;
